@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- entradas de blog -->
     <script src="blog-entrys.js"></script>
@@ -14,7 +15,7 @@
 </head>
 <body> 
   <main id="main">
-    
+    <div id="prueba"></div>
     <section id="publicaciones">
       <div  id="btn_darkmode" onclick="myFunction()"><i class="fas fa-moon"></i></div>
          <!-- blog entrys -->
@@ -40,39 +41,32 @@
   show_the_post_in_destiny(devblog_entrys, "devblog_div")
 
 function show_the_post_in_destiny(arr, div){
-// console.log( arr);
-// console.log( div);
-arr.forEach(show_post);
 
-function show_post(item, index){
-
-var d = new Date(item.fecha);
-
-  
-document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p></article>";
-
-}
-
-}
-
-
-
-
-
-
-/*   
-  blog_entrys.forEach(show_post)
-
-
+  arr.forEach(show_post);
 
   function show_post(item, index){
-
     var d = new Date(item.fecha);
 
-      
-    document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
-    
-  } */
+    document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p>";
+    document.getElementById(div).innerHTML +=  "<div class='b_content' id='contenido_" + item.id +"'> contenido sin modificar </div>";
+    document.getElementById(div).innerHTML +=  " </article>";
+
+ 
+
+  }
+  
+}
+
+
+$('.b_content').each(function() {
+  var str = this.id;
+var res = str.substring(10 , str.length);//le quita contenido_
+
+
+
+  console.log(res);
+    $("#"+ this.id +"").load("post/"+ res +".html");
+});
 
 </script>
 <script>
