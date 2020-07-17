@@ -4,6 +4,9 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: #e3e7ee;
   }
+  h1 {
+    color: #dc4141;
+}
 #main {
     max-width: 1200px;
     margin: 0px auto;
@@ -22,6 +25,9 @@ body{
     background-color: white;
     padding: 30px;
 }
+.post_date{
+  color: #9a9ea7;
+}
 
    #btn_darkmode{
     background-color: transparent;
@@ -37,10 +43,10 @@ body{
 
 
 
-  
-.dark-mode {
+  .dark-mode {
     background-color: black;
     color: white;
   }
   .dark-mode #publicaciones{ background-color:#1c1c21;}
   .dark-mode #btn_darkmode{ background-color: #1c1c21;}
+  .dark-mode .post_date{ color: #4b4b69;}

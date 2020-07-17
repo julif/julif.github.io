@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- entradas de blog -->
     <script src="blog-entrys.js"></script>
+    <!-- entradas de devblog -->
+    <script src="devblog-entrys.js"></script>
 </head>
 <body> 
   <main id="main">
@@ -16,6 +18,11 @@
     <section id="publicaciones">
       <div  id="btn_darkmode" onclick="myFunction()"><i class="fas fa-moon"></i></div>
          <!-- blog entrys -->
+         <h1>Blog:</h1>
+         <div id="blog_div"></div>
+         <h1>Devblog:</h1>
+         <!-- devblog entrys -->
+         <div id="devblog_div"></div>
     </section>
   </main>
 </body>
@@ -29,7 +36,8 @@
   //   document.getElementById("publicaciones").innerHTML += index + ":" + item.titulo + "<br>";
   // }
 
-  show_the_post_in_destiny(blog_entrys, "publicaciones")
+  show_the_post_in_destiny(blog_entrys, "blog_div")
+  show_the_post_in_destiny(devblog_entrys, "devblog_div")
 
 function show_the_post_in_destiny(arr, div){
 // console.log( arr);
@@ -41,7 +49,7 @@ function show_post(item, index){
 var d = new Date(item.fecha);
 
   
-document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
+document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p></article>";
 
 }
 
