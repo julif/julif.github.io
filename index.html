@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-<!-- <body style="background-color: #23293f;"> -->
-<body>
-<h1>julif</h1>
+<head>
+    <meta charset="utf-8">
+    <title> Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-
-<img src="img/logo.png" style="width: 150px;
-height: auto;
-border-radius: 150%;
-border: solid #e8e8e8 3px;"></br>
-<a href="http://julifweb.com/"> pagina web </a>
-
-
-<h3> cosas que hacer </h3>
-<a href="https://trello.com/b/GLO5jfy0/cosas-que-hacer"> tablero principal en trello</a>
-
-
-<h2> redes sociales </h2>
-
-<a href="https://www.facebook.com/JulifIsBetterThanYourMom/" > facebook </a></br>
-<a href="https://twitter.com/julian_julif" > twitter </a></br>
-<a href="https://julif-art.tumblr.com/" > tumblr </a></br>
-<a href="https://ar.pinterest.com/julifisbetterthanyourmom/" > pinterest </a></br>
-
-
-
-<h2> almacenamiento </h2>
-
-<a href="chrome-extension://bigefpfhnfcobdlfbedofhhaibnlghod/mega/secure.html#fm/lF51BCSA" > mega </a></br>
-<a href="https://onedrive.live.com/?id=root&cid=AA75A5A5F851034A" > one-drive </a></br>
-<a href="https://drive.google.com/drive/my-drive" > google-drive </a></br>
-
-<h2> portfolios </h2>
-
-<a href="https://julif-5il32.wixsite.com/julif" > wix </a></br>
-<a href="http://julif-art.deviantart.com/" > deviantart </a></br>
-<a href="https://www.artstation.com/julif" > artstation </a></br>
-<a href="https://giphy.com/channel/julif" > giphy </a></br>
-<a href="https://sketchfab.com/julif" > sketchfab </a></br>
-
-
-
-
-
-
-
-
-<h2> blogs </h2>
-
-<a href="https://julif.substack.com/" > substack </a></br>
-<a href="https://julif-art.tumblr.com/" > tumblr </a></br>
-<a href="http://juli22f.blogspot.com.ar/" > blogger </a></br>
-<a href="https://julifblog.wordpress.com/" > wordpress </a></br>
-
-
-
-
-
-<h2> programacion </h2>
-
-<a href="https://github.com/julif" > github </a></br>
-<a href="https://gist.github.com/julif" > gist </a></br>
-<a href="https://codepen.io/Julif" > codepen </a></br>
-<a href="https://www.sololearn.com/Profile/8250030#_=_" > sololearn </a></br>
-<a href="https://stackoverflow.com/users/8408223/julif" > stackoverflow </a></br>
-
-
-
-<h2> donacion </h2>
-
-<a href="https://ko-fi.com/juli22f" > ko-fi </a></br>
-<a href="https://www.patreon.com/julif" > patreon </a></br>
-
-
-<h2> tienda </h2>
-
-<a href="https://www.designbyhumans.com/shop/julif/" > designbyhumans </a></br>
-
-<h2> preguntas </h2>
-
-<a href="https://ask.fm/juli22f" > ask </a></br>
-<a href="https://holajulif.sarahah.com/" > sarahah </a></br>
-
-
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- entradas de blog -->
+    <script src="blog-entrys.js"></script>
+</head>
+<body> 
+  <main id="main">
+    
+    <section id="publicaciones">
+      <div  id="btn_darkmode" onclick="myFunction()"><i class="fas fa-moon"></i></div>
+         <!-- blog entrys -->
+    </section>
+  </main>
 </body>
+<script>
+  /*    for (i = 0; i <  5; i++) {
+      document.getElementById("publicaciones").innerHTML += "<article> <h2 class='post_title' ><a 	onclick=\"get_current_id(this)\"  post_id=\""+blog_entrys[i].id  +"\" href=\"javascript:pasarVariables('blog_single.html', 'post_id')\" >"+ blog_entrys[i].titulo +"</a></h2> <p class='post_date'> Julif | "+ blog_entrys[i].fecha +"</p> "+ blog_entrys[i].entrada +"</article>";
+
+    } */
+  // blog_entrys.forEach(show_post); 
+    // function myFunction(item, index) {
+  //   document.getElementById("publicaciones").innerHTML += index + ":" + item.titulo + "<br>";
+  // }
+
+  show_the_post_in_destiny(blog_entrys, "publicaciones")
+
+function show_the_post_in_destiny(arr, div){
+// console.log( arr);
+// console.log( div);
+arr.forEach(show_post);
+
+function show_post(item, index){
+
+var d = new Date(item.fecha);
+
+  
+document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
+
+}
+
+}
+
+
+
+
+
+
+/*   
+  blog_entrys.forEach(show_post)
+
+
+
+  function show_post(item, index){
+
+    var d = new Date(item.fecha);
+
+      
+    document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
+    
+  } */
+
+</script>
+<script>
+  
+
+  //tema por defecto
+  var dark_theme = false; 
+
+  if (localStorage.darkmode != undefined){   JSON.parse(localStorage['darkmode']); dark_theme = localStorage.darkmode; }
+
+if (dark_theme == true || dark_theme == "true" ) {
+    document.body.classList = "dark-mode";
+  } 
+  function myFunction() {
+     document.body.classList.toggle("dark-mode");
+     dark_theme = !dark_theme;
+     localStorage.darkmode = dark_theme; //guarda el tema seleccionado en un localstorage
+  }
+
+  </script>
 </html>
