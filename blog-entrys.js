@@ -16,7 +16,7 @@ var blog_entrys = [
     },
   
     { 
-      titulo: 'entrada de blog 1',
+      titulo: 'entrada de vimeo',
       id: 'blog_1', 
       fecha: [2020, 7, 15],
       entrada:'<p> texto de entrada 1</p>'
