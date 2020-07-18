@@ -47,9 +47,9 @@ function show_the_post_in_destiny(arr, div){
   function show_post(item, index){
     var d = new Date(item.fecha);
 
-    document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p>";
-    document.getElementById(div).innerHTML +=  "<div class='b_content' id='contenido_" + item.id +"'> contenido sin modificar </div>";
-    document.getElementById(div).innerHTML +=  " </article>";
+    document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p><div class='b_content' id='contenido_" + item.id +"'> contenido sin modificar </div> </article>";
+  
+   
 
  
 
