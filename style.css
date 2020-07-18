@@ -83,3 +83,13 @@ iframe {
   .dark-mode article{ background-color:#1c1c21;}
   .dark-mode #btn_darkmode{ background-color: #1c1c21;}
   .dark-mode .post_date{ color: #4b4b69;}
+
+
+
+
+  .dark-mode article{ background-color:#2d3b4c;}
+  .dark-mode #btn_darkmode{ background-color: #2d3b4c;}
+  .dark-mode {
+    background-color: #243140;
+    color: #6f8aa2;
+  }
