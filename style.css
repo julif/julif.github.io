@@ -37,6 +37,7 @@ iframe {
   width: 100%;
   margin-top: 10px;
   background-color: #101017 ;
+  background-color: #444648;
  
 /* 
   position: absolute;
@@ -49,7 +50,7 @@ iframe {
 .wp-block-embed__wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   margin-bottom: 20px;
   height: 0;
 }
