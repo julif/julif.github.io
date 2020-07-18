@@ -95,7 +95,13 @@ iframe {
     right: 25px;
     top: 20px;
   }
+  @media screen and (max-width:800px) { 
+   #publicaciones{
+      padding-left: 10px;
+      padding-right: 10px;
+  }
 
+   }
 
 /* 
   .dark-mode {
