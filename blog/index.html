@@ -14,17 +14,22 @@
     <a href="index.html" class="active"> blog </a>
     <a href="../devblog/index.html"> devblog </a>
   </nav>
+<main>
   <h1> Blog </h1>
   <div id="publicaciones"></div>
+</main>
   <script>
 
 blog_entrys.forEach(show_post);
 
 function show_post(item, index) {
-    
-  document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2></article>";
-  
+
+var d = new Date(item.fecha);
+
+document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
+
 }
+
   </script>
 </body>
 </html>

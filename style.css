@@ -22,3 +22,10 @@ nav a{
 .active{ 
  color: #6178ce;
 }
+h1{ text-align: center; }
+main{
+  max-width: 900px;
+    margin: 0px auto;
+    font-size: 1.1rem;
+}
+
