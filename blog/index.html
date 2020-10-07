@@ -5,6 +5,8 @@
     <title> Blog </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="../style.css">
+    <!-- entradas de blog -->
+    <script src="../blog-entrys.js"></script>
 </head>
 <body> 
   <nav>
@@ -13,5 +15,16 @@
     <a href="../devblog/index.html"> devblog </a>
   </nav>
   <h1> Blog </h1>
+  <div id="publicaciones"></div>
+  <script>
+
+blog_entrys.forEach(show_post);
+
+function show_post(item, index) {
+    
+  document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2></article>";
+  
+}
+  </script>
 </body>
 </html>
