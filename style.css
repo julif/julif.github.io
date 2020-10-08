@@ -25,7 +25,16 @@ nav a{
 .active{ 
  color: white;
 }
-h1{ text-align: center; }
+h1{ 
+  text-align: center; 
+  
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.center{
+  text-align: center;
+}
 main{
   max-width: 900px;
   margin: 0px auto;
@@ -70,10 +79,20 @@ article .post_content{
 .post_snippet{
   margin: 10px;
 }
+#fecha{
+  color: #a2a0b9;
+}
+#entrada{
+  padding: 10px;
+}
   .post_full{
     display: none;
   }
 article h2{margin-bottom: 5px;}
+article  a  {
+  text-decoration: none;
+  color: black;
+}
 article .post_date{
  
   color:  #00000082;
