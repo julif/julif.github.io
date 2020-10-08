@@ -5,6 +5,8 @@
     <title> Devblog </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="../style.css">
+     <!-- entradas de blog -->
+     <script src="../devblog-entrys.js"></script>
 </head>
 <body> 
   <nav>
@@ -14,7 +16,21 @@
   </nav>
 <main>
   <h1> Devblog </h1>
+  <div id="publicaciones"></div>
 </main>
+<script>
 
+  blog_entrys.forEach(show_post);
+  
+  function show_post(item, index) {
+  
+  var d = new Date(item.fecha);
+  
+  // document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
+  document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url(../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='#'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'> snippett </p><div class='post_full'> full post </div></section></article>";
+  
+  }
+  
+    </script>
 </body>
 </html>

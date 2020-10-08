@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title> Blog </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+
+
     <!-- entradas de blog -->
     <script src="../blog-entrys.js"></script>
 </head>
@@ -16,6 +19,7 @@
   </nav>
 <main>
   <h1> Blog </h1>
+ 
   <div id="publicaciones"></div>
 </main>
   <script>
@@ -26,10 +30,26 @@ function show_post(item, index) {
 
 var d = new Date(item.fecha);
 
-document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</article>";
+// document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
+document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url(../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='#'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'> snippett </p><div class='post_full'> full post </div></section></article>";
 
 }
 
+
+
+
+
+// document.getElementById("post_thumbnail_blog_004").style.backgroundImage= "url('../media/ko-fi.png')";
+// document.getElementById("post_thumbnail_blog_003").style.backgroundImage= "url('../media/ko-fi.png')";
+// document.getElementById("post_thumbnail_blog_002").style.backgroundImage= "url('../media/ko-fi.png')";
+// document.getElementById("post_thumbnail_blog_001").style.backgroundImage= "url('../img/default.png')";
+
+
+
+
   </script>
+
+
+
 </body>
 </html>
