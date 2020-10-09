@@ -10,6 +10,14 @@
 
 var blog_entrys = [
   { 
+    titulo: 'Que llueva lo que tenga que llover'  ,
+    id: 'blog_007',
+    thumbnail: 'media/phara.png' ,
+    fecha: [2019, 8, 21],
+    snippet: 'esta linea aparece en el estribillo de una de sus canciones' ,
+    entrada: '<img src="../media/phara.png"></img><p>Irina indigo ( la voz en latino de pharah ) es cantante, y esta linea aparece en el estribillo de una de sus canciones… es simplemente demasiado perfecto.</p><p>Link de la cancion: <a href="https://www.youtube.com/watch?v=U-4Q8_9BfNM&ab_channel=IrinaIndigo">https://youtu.be/U-4Q8_9BfNM </a></p>'    
+  },
+  { 
     titulo: 'Shacta'  ,
     id: 'blog_006',
     thumbnail: 'media/shacta3.png' ,
