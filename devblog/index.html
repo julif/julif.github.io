@@ -18,13 +18,50 @@
   <h1> Devblog </h1>
   <div id="publicaciones"></div>
 </main>
+<footer>
+  <div class="footer_copyrigth_container">
+    <linea>© Copyright 2019 - <span id="current_year"> julif</linea> <linea>- All Rights Reserved</linea>
+    <script> document.getElementById("current_year").innerHTML = new Date().getFullYear();</script>
+  </div>
+</footer>
 <script>
 
   blog_entrys.forEach(show_post);
   
   function show_post(item, index) {
   
-  var d = new Date(item.fecha);
+
+  
+var d = new Date(item.fecha);
+
+
+
+
+if ( item.thumbnail  === undefined) {  
+
+  var str  = item.entrada;
+  var elem = document.createElement('div');
+ elem.style.display = 'none';
+ document.body.appendChild(elem);
+ elem.innerHTML = str;
+
+ var imagen = elem.querySelector('img');
+
+if (imagen == null) {
+  item.thumbnail = 'img/thumb_default.png'
+} else {
+  
+  var thumb_extention= imagen.src.split("/").pop().split(".")[1];
+ var thumb_name= imagen.src.split("/").pop().split(".")[0];
+
+ item.thumbnail=  thumb_name + "."+thumb_extention;
+ item.thumbnail = "media/" +item.thumbnail;
+}
+console.log( item.thumbnail );
+
+
+
+}
   
   // document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
   document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url(../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='devblog_post.html?post_id=" + item.id + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='devblog_post.html?post_id=" + item.id + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'> snippett </p><div class='post_full'> full post </div></section></article>";

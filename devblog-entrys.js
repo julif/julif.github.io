@@ -32,7 +32,7 @@ var blog_entrys = [
     { 
       titulo: 'entrada de devblog 1',
       id: 'devblog_001', 
-      thumbnail: 'img/default.png' ,
+      thumbnail: 'img/thumb_default.png' ,
       fecha: [2020, 7, 15]
     
     }

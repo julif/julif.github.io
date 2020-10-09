@@ -9,6 +9,15 @@
         <!-- entradas de blog -->
     <script src="../blog-entrys.js"></script>
       <style>
+
+
+
+    h1{
+      
+font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 25px;
+    }
         /* Style all font awesome icons */
 a{
      text-decoration: none;
@@ -104,6 +113,12 @@ body{
      
       
     </main>
+    <footer>
+      <div class="footer_copyrigth_container">
+        <linea>© Copyright 2019 - <span id="current_year"> julif</linea> <linea>- All Rights Reserved</linea>
+        <script> document.getElementById("current_year").innerHTML = new Date().getFullYear();</script>
+      </div>
+    </footer>
 
 
   </body>
@@ -132,11 +147,11 @@ body{
         console.log(" titulo: "+firstObj.titulo);
         console.log(" id: "+firstObj.id);
         console.log(" fecha: "+firstObj.fecha);
-        console.log(" entrada : "+firstObj.thumbnail);
+        console.log(" entrada : "+firstObj.entrada);
 
         var titulo = firstObj.titulo;
         var fecha = firstObj.fecha;
-        var entrada = firstObj.thumbnail;
+        var entrada = firstObj.entrada;
 
    
 
