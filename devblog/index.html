@@ -77,9 +77,18 @@ console.log( item.thumbnail );
 
 }
   
-    </script> <script>
-  lista();
-   //block();
+    </script> 
+     <script>
+   //lista();
+
+
+  //estilo predeterminado
+   if ( localStorage.julifgithubio_devblog_poststyle_preference ==  undefined) {  block();}
+   //asignar el tipo de post
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'full') {  full();}
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'block') {  block();}
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'lista') {  lista();}
+
   function full() {
     
     document.getElementById("btn_list_post").classList.remove("active");
@@ -91,6 +100,10 @@ console.log( item.thumbnail );
     document.getElementById("publicaciones").classList.remove("post_class_lista");
     //add
     document.getElementById("publicaciones").classList.add("post_class_full");
+
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'full';
+
   }
   function block() {
     document.getElementById("btn_list_post").classList.remove("active");
@@ -102,6 +115,9 @@ console.log( item.thumbnail );
     document.getElementById("publicaciones").classList.remove("post_class_lista");
     //add
     document.getElementById("publicaciones").classList.add("post_class_block");
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'block';
+ 
   }
   function lista() {
     document.getElementById("btn_block_post").classList.remove("active");
@@ -113,6 +129,9 @@ console.log( item.thumbnail );
     document.getElementById("publicaciones").classList.remove("post_class_block");
     //add
     document.getElementById("publicaciones").classList.add("post_class_lista");
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'lista';
+ 
   }
   </script>
 
