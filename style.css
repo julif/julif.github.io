@@ -308,6 +308,16 @@ main {
  }
 
 
+
+
+ #btn_more{
+  background-color: #5ac0e8;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+ }
+
 footer {
   /* margin-top: -58px;
   margin-top: -138px; */
