@@ -1,9 +1,10 @@
 /* { 
     titulo: ''  ,
-    id: '',
-    thumbnail: '',  opcional(se quita si no hace falta)
-    fecha: [2020, 1, 1],
+    id: 'blog_016',
+    thumbnail: '', 
+    fecha: [2020, 12, 1],
     snippet: '' ,
+    custom_link: '' ,
     entrada: ''    
   }, */
 
@@ -13,6 +14,7 @@ var blog_entrys = [
     titulo: 'formato helltaker'  ,
     id: 'blog_016',
     fecha: [2020, 1, 1],
+    custom_link: ' ',
     snippet: 'me gusta el formato de de helltaker para usar en novelas visuales' ,
     entrada:  '<img src="../media/Eabv0LqXsAAfdDV.jpg"></img><p>me gusta el formato de de helltaker para usar en novelas visuales</p>'    
   },

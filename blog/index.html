@@ -47,7 +47,7 @@ var d = new Date(item.fecha);
 
 
 
-if ( item.thumbnail  === undefined) {  
+if (item.thumbnail  === undefined || item.thumbnail  == ''|| item.thumbnail  == ' '|| item.thumbnail  == null)  {  
 
   var str  = item.entrada;
   var elem = document.createElement('div');
@@ -75,12 +75,19 @@ console.log( item.thumbnail );
 }
 
 
+if (item.custom_link  === undefined || item.custom_link  == ''|| item.custom_link  == ' '|| item.custom_link  == null) {
+  var post_link = "blog_post.html?post_id=" + item.id;
+} else {
+  var post_link = item.custom_link;
+}
+
+
 
 // en el caso de que no halla thumb asignar thumb por default
 //if ( item.thumbnail  === undefined) {  item.thumbnail = 'img/thumb_default.png'}
 
 // document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
-document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( ../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='blog_post.html?post_id=" + item.id + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='blog_post.html?post_id=" + item.id + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
+document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( ../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='" + post_link + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='" + post_link + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
 
 }
 
