@@ -29,6 +29,19 @@
   </div>
  
   <div id="publicaciones"></div>
+  <div style="display: flex;justify-content: center;">
+
+ <!--    <div style="width: 95%;position: relative;
+    max-width: 900px;display: flex;height: 35px;
+margin-bottom: 15px;">
+
+<a class="btn_ant_sig" onclick="previous_pagination()" id="btn_previus"> <i class="fas fa-chevron-left"></i>  Anterior  </a>
+<a  class="btn_ant_sig" onclick="Display_page(1); " style="    position: absolute;
+right: 0;" id="btn_next"> Siguiente  <i class="fas fa-chevron-right"></i></a>
+    </div -->
+    <a onclick="show_more();" >   ver mas post  </a>
+
+  </div>
 </main>
 <footer>
   <div class="footer_copyrigth_container">
@@ -38,7 +51,40 @@
 </footer>
   <script>
 
-blog_entrys.forEach(show_post);
+// blog_entrys.forEach(show_post);   console.log("page:"+ current_page);
+
+
+var current_page =   window.location.search;
+current_page = current_page.substr(6,);
+
+// if ( current_page == "" ){ 
+//   current_page = 0; 
+//   Display_page(0); 
+ 
+// }
+e= 0;
+function show_more(){
+
+  Display_page(e); 
+  e++;
+ }
+
+Display_page(0); 
+
+function Display_page(page){
+
+  let post_per_page = 6;
+  let start = post_per_page * page;
+  let end = start + post_per_page;
+  let paginatedItems = blog_entrys.slice( start, end);
+  paginatedItems.forEach(show_post);
+  
+}
+
+
+
+
+
 
 function show_post(item, index) {
 
