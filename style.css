@@ -7,6 +7,35 @@ body{
   margin: 0px auto;
   background-color: #e3e5ee;
 }
+banner{
+  background-image: url('img/banner_background.png');
+  display: block;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: #334158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 140px #0b0d13!important;
+  box-shadow: inset 0 0 140px #0b0d13!important;
+  -moz-box-shadow: inset 0 0 140px 70px #0b0d13!important;
+  -webkit-box-shadow: inset 0 0 140px 70px #0b0d13!important;
+  box-shadow: inset 0 0 140px 70px #0b0d13!important;
+
+}
+banner nav{
+  position: absolute;
+  top: 0;
+  display: block;
+  /* height: 100%; */
+  width: 100%;
+  background-color: #ff000000;
+  border-bottom: 2px solid #ffffff0f;}
 nav{
    text-align: center;
    padding-bottom: 20px;
