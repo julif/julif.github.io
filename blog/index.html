@@ -56,6 +56,7 @@ if ( item.thumbnail  === undefined) {
  elem.innerHTML = str;
 
  var imagen = elem.querySelector('img');
+ console.log(imagen)
 
 if (imagen == null) {
   item.thumbnail = 'img/thumb_default.png'
@@ -97,8 +98,8 @@ document.getElementById("publicaciones").innerHTML +=  "<article><section  class
 
   </script>
  <script>
-   lista();
-   //block();
+   //lista();
+   block();
   function full() {
     
     document.getElementById("btn_list_post").classList.remove("active");

@@ -79,6 +79,10 @@ article .post_thumbnail{
   background-color: #afafaf;
     height: 100%;
     width: 23%;
+
+    display: inline-table;
+    width: 210px;
+    height: 125px;
 }
 article .thumbnail {
     background-image: url("img/default.png");

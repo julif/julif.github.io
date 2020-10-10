@@ -1,7 +1,7 @@
 /* { 
     titulo: ''  ,
     id: '',
-    thumbnail: '' ,
+    thumbnail: '',  opcional(se quita si no hace falta)
     fecha: [2020, 1, 1],
     snippet: '' ,
     entrada: ''    
@@ -9,6 +9,76 @@
 
 
 var blog_entrys = [
+  { 
+    titulo: 'formato helltaker'  ,
+    id: 'blog_016',
+    fecha: [2020, 1, 1],
+    snippet: 'me gusta el formato de de helltaker para usar en novelas visuales' ,
+    entrada:  '<img src="../media/Eabv0LqXsAAfdDV.jpg"></img><p>me gusta el formato de de helltaker para usar en novelas visuales</p>'    
+  },
+  { 
+    titulo: 'Nuevo dragon'  ,
+    id: 'blog_015',
+    thumbnail: 'media/dragon6.png', 
+    fecha: [2020, 3, 11],
+    snippet: 'me molestaba mucho el horrible intento de personaje que dibuje frente a este dragon hace tantos años' ,
+    entrada: '<img src="../media/cxcxcxcxb-1024x1013.png"> <p>me molestaba mucho el horrible intento de personaje que dibuje frente a este dragon hace tantos años, asi que lo saque de ese feo dibujo y lo actualize un poco.</p><img src="../media/jinete_de_dragon_by_julif_art_d7sklm1-fullview-1.jpg"> <img src="../media/dragon5.png"></img><img src="../media/dragon6.png"></img>'  
+  },
+
+  
+  { 
+    titulo: 'practica con julif chibi'  ,
+    id: 'blog_014',
+    thumbnail: 'media/ezgif-2-61607a0c764f.gif',
+    fecha: [2020, 3, 11],
+    snippet: 'otro fan-art de overwatch' ,
+    entrada: '<p>me parece que este estilo es ideal para animatics simples o videos de storytelling.</p> <img src="../media/Untitled-1fdfd-1024x576.png"></img><img src="../media/cdcdcdcd-1024x576.png"></img><img src="../media/ezgif-2-61607a0c764f.gif"></img>'    
+  },
+  { 
+    titulo: 'Chibi Tracer'  ,
+    id: 'blog_013',
+    fecha: [2020, 2, 18],
+    snippet: 'otro fan-art de overwatch' ,
+    entrada: '<img src="../media/tracer.jpg"></img><img src="../media/tracer.gif"></img>'    
+  },
+  { 
+    titulo: 'Julif'  ,
+    id: 'blog_012',
+    fecha: [2020, 2, 18],
+    snippet: '...' ,
+    entrada: '<img src="../media/julif2.gif">'    
+  },
+  { 
+    titulo: 'Portada de shacta'  ,
+    id: 'blog_011',
+    fecha: [2020, 2, 9],
+    snippet: 'La vieja portada que hice para un webcomic interactivo que nunca termine' ,
+    entrada: '<img src="../media/capitulo1fondo.png"><p>La vieja portada que hice para un webcomic interactivo que nunca termine</p>'    
+  },
+  { 
+    titulo: 'julif chibi 2008-2019'  ,
+    id: 'blog_010',
+    thumbnail: 'media/dffdfdfd-1024x576.png',  
+    fecha: [2020, 2, 7],
+    snippet: 'me gusta cada tanto ver mi propio progreso' ,
+    entrada: '<img src="../media/dffdfdfd-1024x576.png"></img><p>me gusta cada tanto ver mi propio progreso</p>'    
+  },
+  { 
+    titulo: 'prueba de animacion'  ,
+    id: 'blog_009',
+    fecha: [2020, 1, 1],
+    snippet: 'una vieja prueba de animación que encontré por ahí… debería actualizarla.' ,
+    entrada: '<img src="../media/julif.gif"><p>una vieja prueba de animación que encontré por ahí… debería actualizarla.</p>'    
+  }, 
+  { 
+    titulo: 'dragologia',
+    id: 'blog_008',
+    thumbnail: 'media/dragon3.png',
+    fecha: [2020, 1, 13],
+    snippet: 'algunos de mis dragones' ,
+    entrada: ' <p>algunos de mis dragones</p><img src="../media/dragon1.png"></img> <img src="../media/dragon2.png"></img><img src="../media/dragon3.png"></img><img src="../media/dragon4.jpg"></img>'    
+   
+  },
   { 
     titulo: 'Que llueva lo que tenga que llover'  ,
     id: 'blog_007',
