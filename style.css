@@ -279,6 +279,10 @@ article .post_date{
   margin-bottom: 2px;
   padding: 20px;
 }
+.post_class_lista .post_snippet {
+  margin: 10px;
+  margin-left: 0;
+}
 /* .post_class_block .post_thumbnail {width: 100%;} */
 /* .post_class_block .thumbnail img{ display: block;    width: 100%;
   height: auto;} */
