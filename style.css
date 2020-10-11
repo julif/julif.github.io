@@ -136,7 +136,22 @@ article .post_thumbnail{
 
     width: 265px;
     height: 165px;
+    overflow: hidden;
+    
 }
+/* article .thumbnail:hover{
+ 
+transform: scale(1.2);
+transition: all 0.5s 0s ease;
+
+} */
+article:hover .thumbnail{
+ 
+  transform: scale(1.2);
+  transition: all 0.5s 0s ease;
+  
+  }
+
 article .thumbnail {
     background-image: url("img/default.png");
     background-repeat: no-repeat;
@@ -148,6 +163,7 @@ article .thumbnail {
     height: 100%;
     width: 101%;
     margin: 0;
+    transition: all 0.5s 0s ease;
 }
 article .post_content{
   padding-left: 15px;
