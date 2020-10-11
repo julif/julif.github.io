@@ -47,6 +47,7 @@ banner nav{
 }
 banner .active{ 
   color: white;
+  color: #4ab9e4;
  }
 nav{
    text-align: center;
@@ -54,6 +55,7 @@ nav{
    padding-top: 20px;
    background-color: #111c29;
    color: #97a0ad;
+   color: #ffffff;
    text-transform: capitalize;
 
 /* 
@@ -69,9 +71,11 @@ nav a{
   margin-left: 6px;
   margin-right: 6px;
   color: #97a0ad;
+  color: white;
 }
 .active{ 
  color: white;
+ color: #4ab9e4;
 }
 h1{ 
   text-align: center; 
