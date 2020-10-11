@@ -110,7 +110,7 @@ var blog_entrys = [
     id: 'blog_004',
     fecha: [2019, 7, 16],
     snippet: 'Lo siento, tenia que hacerlo.' ,
-    entrada: '<figure class="wp-block-video"><video controls="" src="http://julifweb.com/wp-content/uploads/2019/07/1529304900_6450951.mp4"></video></figure><p>Lo siento, tenia que hacerlo.</p>'    
+    entrada: '<figure class="wp-block-video"><video controls="" src="../media/julif_sexy.mp4"></video></figure><p>Lo siento, tenia que hacerlo.</p>'    
   },
   { 
     titulo: 'art vs artist 2019'  ,
