@@ -289,10 +289,36 @@ article .post_date{
 
 
 
-  #container_btn_post{    text-align: end;
-  margin: 10px;}
+  #container_btn_post{    
+    text-align: end;
+  margin: 10px;
+  outline: none; 
+
+}
+#container_btn_post i{ 
+  font-size: 17px;
+ } 
+#container_btn_post button{
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+ 
+
+}
+#container_btn_post button:focus {
+  outline: none; 
+}
   #container_btn_post .active{ 
-    color: red;
+  
+      /* color: red; */
+      background-color: #5ac0e8;
+      padding: 10px;
+      /* margin-top: 20px; */
+      color: white;
+      cursor: default;
+      border: none!important;
+ 
 }
 
 .thumbnail img{display: block;
