@@ -405,9 +405,11 @@ article .post_thumbnail {
   overflow: hidden; 
 
 
-  background-color: #1f1a1a36;
-  overflow: scroll;
-
+  /* background-color: #1f1a1a36;
+  overflow: scroll; */
+  position: absolute;
+  margin-left: 128px;
+  margin-right: 5px
 
 }
 .post_class_lista  article .post_date {display: none;}
