@@ -66,14 +66,30 @@ console.log( "8: " + document.URL.split('/').slice(8, -1).join('/')  );
 console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  ); */
 var raiz = document.URL.split('/').slice(9, -1).join('/');
 if ( raiz != " ") {
-   alert("hola");
-   console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
-  //  console.log( "9: " + document.URL.split('/').slice(9, -1).join('/');
+   
+   //console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
+   var fuente = document.URL.split('/').slice(9, -1).join('/');
+  
 } else {
-  alert("chau");
-  console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+  var fuente = document.URL.split('/').slice(2, -1).join('/');
+  //console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
 }
 
+if( fuente == "julif.github.io"){
+  document.getElementById("nav_link_home").href= "index.html"; 
+  document.getElementById("nav_link_blog").href= "blog/index.html";
+  document.getElementById("nav_link_devblog").href= "devblog/index.html";
+}
+if( fuente == "julif.github.io/blog"){
+  document.getElementById("nav_link_home").href= "../index.html"; 
+  document.getElementById("nav_link_blog").href= "index.html";
+  document.getElementById("nav_link_devblog").href= "../devblog/index.html";
+}
+if( fuente == "julif.github.io/devblog"){
+  document.getElementById("nav_link_home").href= "../index.html"; 
+  document.getElementById("nav_link_blog").href= "../blog/index.html";
+  document.getElementById("nav_link_devblog").href= "index.html";
+}
 
 //chequear el 2 en github
 //chequar el 9 en pc
