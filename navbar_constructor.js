@@ -54,7 +54,7 @@ console.log( "origin: " + window.location.origin);
 console.log( "search: " + window.location.search);
 console.log( "hash: " + window.location.hash);
 
-console.log( document.URL.substr(0,document.URL.lastIndexOf('/'))  );
+/* console.log( document.URL.substr(0,document.URL.lastIndexOf('/'))  );
 console.log( "1: " + document.URL.split('/').slice(1, -1).join('/')  );
 console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
 console.log( "3: " + document.URL.split('/').slice(3, -1).join('/')  );
@@ -63,7 +63,15 @@ console.log( "5: " + document.URL.split('/').slice(5, -1).join('/')  );
 console.log( "6: " + document.URL.split('/').slice(6, -1).join('/')  );
 console.log( "7: " + document.URL.split('/').slice(7, -1).join('/')  );
 console.log( "8: " + document.URL.split('/').slice(8, -1).join('/')  );
-console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
+console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  ); */
+var raiz = document.URL.split('/').slice(9, -1).join('/');
+if ( raiz == " ") {
+   alert("hola");
+  //  console.log( "9: " + document.URL.split('/').slice(9, -1).join('/');
+} else {
+  alert("chau");
+  console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+}
 
 
 //chequear el 2 en github
