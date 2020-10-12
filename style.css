@@ -409,7 +409,9 @@ article .post_thumbnail {
   overflow: scroll; */
   position: absolute;
   margin-left: 116px;
-  margin-right: 5px
+
+  margin-right: 5px;
+  margin-top: -10px;
 
 }
 .post_class_lista  article .post_date {display: none;}
