@@ -512,3 +512,26 @@ main{
   margin-bottom: 30px;
   background-color: #5e5e7b29;
 }  */
+
+.prettyprint {
+  /* background: #293546 !important; */
+  /* background: #222631 !important; */
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace!important;
+  line-height: 1.7 !important;
+  /* padding: 50px !important; */
+  border-radius: 9px !important;
+  border: 0 !important;adding: 50px !important;
+  overflow: auto!important;
+  font-size: 16px !important;
+
+}
+.prettyprint {
+  /* background: #222631 !important; */
+  background: #293546 !important;
+}
+@media (orientation: landscape){
+
+  .prettyprint {
+    padding: 50px !important;
+  }
+}
