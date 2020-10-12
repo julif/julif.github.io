@@ -55,6 +55,10 @@ console.log( "search: " + window.location.search);
 console.log( "hash: " + window.location.hash);
 
 console.log( document.URL.substr(0,document.URL.lastIndexOf('/'))  );
+console.log( "1: " + document.URL.split('/').slice(1, -1).join('/')  );
+console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+console.log( "3: " + document.URL.split('/').slice(3, -1).join('/')  );
+console.log( "4: " + document.URL.split('/').slice(4, -1).join('/')  );
 console.log( "5: " + document.URL.split('/').slice(5, -1).join('/')  );
 console.log( "6: " + document.URL.split('/').slice(6, -1).join('/')  );
 console.log( "7: " + document.URL.split('/').slice(7, -1).join('/')  );
