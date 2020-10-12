@@ -48,7 +48,7 @@ banner nav{
 }
 banner .active{ 
   color: white;
-  color: #4ab9e4;
+  /* color: #4ab9e4; */
  }
  #devblog_banner ,#blog_banner{
   margin-top: 0px;
@@ -99,11 +99,11 @@ nav a{
   margin-left: 6px;
   margin-right: 6px;
   color: #97a0ad;
-  color: white;
+  /* color: white; */
 }
 .active{ 
  color: white;
- color: #4ab9e4;
+ /* color: #4ab9e4; */
 }
 h1{ 
   text-align: center; 
@@ -293,6 +293,9 @@ article .post_date{
   -webkit-box-shadow: 0px 0px 0px 2px rgba(201,201,201,37%);
   -moz-box-shadow: 0px 0px 0px 2px rgba(201,201,201,37%);
   box-shadow: 0px 0px 0px 2px rgb(201 201 201 / 37%); 
+
+  margin-top: 0px;
+  margin-bottom: 13px;
 }
 /* .post_class_block  article .post_thumbnail {height: auto;} */
 .post_class_block  article .post_thumbnail {
@@ -324,8 +327,10 @@ article .post_date{
 }
 
 .post_class_lista article{
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
   padding: 20px;
+  margin-bottom: 8px;
+    margin-top: 0px;
 }
 .post_class_lista .post_snippet {
   margin: 10px;
@@ -410,7 +415,7 @@ article .post_thumbnail {
   position: absolute;
   margin-left: 116px;
 
-  margin-right: 5px;
+  margin-right: 12px;
   margin-top: -10px;
 
 }

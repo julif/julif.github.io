@@ -83,8 +83,10 @@ if (item.custom_link  === undefined || item.custom_link  == ''|| item.custom_lin
   var post_link = item.custom_link;
 }
   
+
+var month = d.getMonth() + 1 ;// month 
   // document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
-  document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( ../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='" + post_link + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='" + post_link + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
+  document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( ../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='" + post_link + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='" + post_link + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+  month  +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
 
 }
   

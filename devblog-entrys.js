@@ -33,6 +33,17 @@ var blog_entrys = [
    
   //   },
 
+  { 
+    titulo: 'Detectar tamaño de el navegador con javascript',
+    id: 'devblog_002', 
+    thumbnail: 'img/javascript.png' ,
+    fecha: [2020, 7, 16],
+    snippet: 'la funcion responsive es el segundo paso despues de la funcion: detectar idioma. la funcion responsive debe ser llamada desde la javascript despues de el idioma.' ,
+    custom_link: 'devblog_entry_002.html' ,
+    entrada: '  sin contenido '  
+   
+  
+  },
     { 
       titulo: 'Detectar idioma de el navegador con javascript',
       id: 'devblog_001', 
