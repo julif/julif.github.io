@@ -400,7 +400,16 @@ article .post_thumbnail {
     margin-right: 5px;
     padding: 10px;
 }
-.post_class_lista article .post_content { padding-right: 0px; overflow: hidden; }
+.post_class_lista article .post_content { 
+  padding-right: 0px; 
+  overflow: hidden; 
+
+
+  background-color: #1f1a1a36;
+  overflow: scroll;
+
+
+}
 .post_class_lista  article .post_date {display: none;}
 .post_class_lista  article .post_snippet{ display: none;}
 .post_class_lista article .post_thumbnail {
