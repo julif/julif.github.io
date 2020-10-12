@@ -50,6 +50,33 @@ banner .active{
   color: white;
   color: #4ab9e4;
  }
+ #devblog_banner ,#blog_banner{
+  margin-top: 0px;
+  background-color: #667588;
+    margin-top: 0px;
+    /* padding-top: 150px; */
+    /* padding-bottom: 150px; */
+    background-image: url(img/banner2.png);
+    height: 348px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.desktop_only{ display: block;}
+.mobile_only{ display: none;}
+ @media only screen  and (max-width: 800px) { 
+  #devblog_banner ,#blog_banner{
+    background-size: cover;
+    height: 120px;
+   }
+   #devblog_banner  h1 {padding-right: 75px;}
+   #blog_banner  h1 {padding-right: 75px;}
+   .desktop_only{ display: none;}
+   .mobile_only{ display: block;}
+}
+ 
 nav{
    text-align: center;
    padding-bottom: 20px;
