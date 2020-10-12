@@ -416,6 +416,7 @@ article .post_thumbnail {
   margin-bottom: 5px;
   font-size: 20px;
   text-align: initial;
+  text-align: inherit;
   width: 100%;
 }
 
