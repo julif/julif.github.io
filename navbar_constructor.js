@@ -67,12 +67,12 @@ console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  ); */
 var raiz = document.URL.split('/').slice(9, -1).join('/');
 if ( raiz != " ") {
    
-   //console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
+   console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
    var fuente = document.URL.split('/').slice(9, -1).join('/');
   
 } else {
   var fuente = document.URL.split('/').slice(2, -1).join('/');
-  Alert( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+  console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
 }
 
 if( fuente == "julif.github.io"){
