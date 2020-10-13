@@ -30,18 +30,34 @@
  // document.getElementById("header").innerHTML=" <nav>  <a href='../index.html'> Inicio </a><a href='index.html' class='active'> blog </a><a href='../devblog/index.html'> devblog </a></nav> "
 
 
-
+ var raiz = document.URL.split('/').slice(9, -1).join('/');
+ console.log("raiz: " +raiz);
+ 
+ if ( raiz.length >= 3) {
+    
+    console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
+    var fuente = document.URL.split('/').slice(9, -1).join('/');
+   
+ } else {
+   var fuente = document.URL.split('/').slice(2, -1).join('/');
+   console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+ }
 
 
 
 //crea el elemento nav
 var navbar_container =  document.createElement("nav");
 navbar_container.setAttribute("id", "main_navbar");
- //incluye nav dentro de el contendor
+
+
+
+     //incluye nav dentro de #header
  document.getElementById("header").appendChild(navbar_container); 
 
+
+
 //  document.getElementById("header").innerHTML += " <nav>" ; 
- document.getElementById("main_navbar").innerHTML += "<a  id='nav_link_home' href='../index.html'> Inicio </a>";
+ document.getElementById("main_navbar").innerHTML += "<a  id='nav_link_home' href='../index.html'> Home </a>";
 //  document.getElementById("main_navbar").innerHTML += "<a href='index.html' class='active'> blog </a>";
  document.getElementById("main_navbar").innerHTML += "<a id='nav_link_blog' href='index.html'> blog </a>";
  document.getElementById("main_navbar").innerHTML += "<a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a>" ;
@@ -64,18 +80,7 @@ console.log( "6: " + document.URL.split('/').slice(6, -1).join('/')  );
 console.log( "7: " + document.URL.split('/').slice(7, -1).join('/')  );
 console.log( "8: " + document.URL.split('/').slice(8, -1).join('/')  );
 console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  ); */
-var raiz = document.URL.split('/').slice(9, -1).join('/');
-console.log("raiz: " +raiz);
 
-if ( raiz.length >= 1) {
-   
-   console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
-   var fuente = document.URL.split('/').slice(9, -1).join('/');
-  
-} else {
-  var fuente = document.URL.split('/').slice(2, -1).join('/');
-  console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
-}
 
 if( fuente == "julif.github.io"){
   document.getElementById("nav_link_home").href= "index.html"; 

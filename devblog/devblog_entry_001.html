@@ -20,10 +20,10 @@
           h3 {
     color: #155799;
 }
-          footer {
+          /* footer {
        
           margin-top: 80px!important;
-      }
+      } */
           nav{
       
          background-color: white;
@@ -118,11 +118,14 @@ body{
       </style>
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <a href="../index.html"> Inicio </a>
       <a href="../blog/index.html"> blog </a>
       <a href="index.html"> devblog </a>
-    </nav>
+    </nav> -->
+    <header id="header">
+
+    </header>
 
     <main>
       <h1 id="titulo">Detectar idioma de el navegador con javascript</h1>
@@ -195,12 +198,7 @@ detectarIdioma();
      
       
     </main>
-    <footer>
-      <div class="footer_copyrigth_container">
-        <linea>© Copyright 2019 - <span id="current_year"> julif</linea> <linea>- All Rights Reserved</linea>
-        <script> document.getElementById("current_year").innerHTML = new Date().getFullYear();</script>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
 
 
   </body>
@@ -250,4 +248,7 @@ detectarIdioma();
         document.getElementById("entrada").innerHTML = entrada;
     </script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+   
+    <script src="../navbar_constructor.js"></script>
+    <script src="../footer_constructor.js"></script>
 </html>

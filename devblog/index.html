@@ -35,12 +35,7 @@
   </div>
   <div id="publicaciones"></div>
 </main>
-<footer>
-  <div class="footer_copyrigth_container">
-    <linea>© Copyright 2019 - <span id="current_year"> julif</linea> <linea>- All Rights Reserved</linea>
-    <script> document.getElementById("current_year").innerHTML = new Date().getFullYear();</script>
-  </div>
-</footer>
+<footer id="footer"></footer>
 <script>
 
   blog_entrys.forEach(show_post);
@@ -151,6 +146,7 @@ var month = d.getMonth() + 1 ;// month
   }
   </script>
 <script src="../navbar_constructor.js"></script>
+<script src="../footer_constructor.js"></script>
 <script> document.getElementById("nav_link_devblog").classList.add("active");</script>
 </body>
 
