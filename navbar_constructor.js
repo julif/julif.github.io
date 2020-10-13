@@ -65,8 +65,8 @@ console.log( "7: " + document.URL.split('/').slice(7, -1).join('/')  );
 console.log( "8: " + document.URL.split('/').slice(8, -1).join('/')  );
 console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  ); */
 var raiz = document.URL.split('/').slice(9, -1).join('/');
-console.log( "raiz: "+ raiz);
-if ( raiz != " ") {
+console.log(raiz);
+if ( raiz == "julif.github.io") {
    
    console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
    var fuente = document.URL.split('/').slice(9, -1).join('/');
