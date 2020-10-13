@@ -11,6 +11,14 @@
 
 var blog_entrys = [
   { 
+    titulo: 'art vs artist 2020'  ,
+    id: 'blog_017',
+    fecha: [2020, 10, 13],
+    custom_link: ' ',
+    snippet: 'art vs artist' ,
+    entrada:  '<img src="../media/art_vs_artist_2020.jpg"></img> <p>#artvsartist #artvsartist2020 #julif </p>'    
+  },
+  { 
     titulo: 'formato helltaker'  ,
     id: 'blog_016',
     fecha: [2020, 7, 2],
