@@ -72,7 +72,7 @@ if ( raiz != " ") {
   
 } else {
   var fuente = document.URL.split('/').slice(2, -1).join('/');
-  //console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
+  Alert( "2: " + document.URL.split('/').slice(2, -1).join('/')  );
 }
 
 if( fuente == "julif.github.io"){
