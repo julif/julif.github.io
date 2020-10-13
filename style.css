@@ -2,16 +2,11 @@
 Name: julif.github.io
 Author: Julif
 */
+
 body{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0px auto;
-  /* background-color: #e3e5ee; */
   background-color: #e2e8f1;
-
-
-
-
-
 }
 banner{
   background-image: url('img/banner_background.png');
@@ -65,6 +60,41 @@ banner .active{
     align-items: center;
     color: white;
 }
+
+
+
+#devblog_entry{background-color: white;}
+#devblog_entry h1{
+  font-size: 3em;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+#devblog_entry nav{
+  background-color: white;
+  color: #97a0ad;
+  text-transform: capitalize;
+  border-bottom: 3px solid #97a0ad40; 
+}
+#devblog_entry nav a{color: #97a0ad;}
+#devblog_entry a{text-decoration: none;}
+
+
+
+
+
+
+
+
+
+      h3 {
+        color: #155799;
+        }
+
+
+
+
+
+
 .desktop_only{ display: block;}
 .mobile_only{ display: none;}
  @media only screen  and (max-width: 800px) { 

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title id="page_title"> Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen"><!-- hoja de estilos pricipal -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="../Tranquil_Heart.css" type="text/css" rel="stylesheet" />
+    <!-- entradas de blog -->
+    <script src="../devblog-entrys.js"></script>
+  </head>
+  <body id="devblog_entry">
+    <header id="header"></header>
+    <main>
+      <!-- main -->
+    </main>
+    <footer id="footer"></footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    var titulo = document.getElementById("titulo").innerHTML
+    document.title = titulo;
+  </script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script> var current_section = "devblog_entry"; </script>
+  <script src="../navbar_constructor.js"></script>
+  <script src="../footer_constructor.js"></script>
+</html>
