@@ -63,20 +63,20 @@ banner .active{
 
 
 
-#devblog_entry{background-color: white;}
-#devblog_entry h1{
+#blog_entry, #devblog_entry{background-color: white;}
+#blog_entry, #devblog_entry h1{
   font-size: 3em;
   margin-bottom: 0;
   margin-top: 50px;
 }
-#devblog_entry nav{
+#blog_entry, #devblog_entry nav{
   background-color: white;
   color: #97a0ad;
   text-transform: capitalize;
   border-bottom: 3px solid #97a0ad40; 
 }
-#devblog_entry nav a{color: #97a0ad;}
-#devblog_entry a{text-decoration: none;}
+#blog_entry, #devblog_entry nav a{color: #97a0ad;}
+#blog_entry, #devblog_entry a{text-decoration: none;}
 
 
 
