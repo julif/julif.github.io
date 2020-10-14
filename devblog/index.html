@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../style.css">
      <!-- entradas de blog -->
      <script src="../devblog-entrys.js"></script>
+     <script > var current_page = "devblog"; console.log( "pagina: "+ current_page )</script>
 </head>
-<body> 
+<body id="devblog"> 
   <!-- <nav>
     <a href="../index.html"> Inicio </a>
     <a href="../blog/index.html"> blog </a>
@@ -19,10 +20,10 @@
   <header id="header">
 
   </header>
-  <div id="devblog_banner">
+<!--   <div id="devblog_banner">
   <h1 style="
   margin: 0;
-"> DEVBLOG </h1></div>
+"> DEVBLOG </h1></div> -->
 <main>
 
   <div id="container_btn_post">
@@ -145,8 +146,10 @@ var month = d.getMonth() + 1 ;// month
  
   }
   </script>
+ 
 <script src="../navbar_constructor.js"></script>
 <script src="../footer_constructor.js"></script>
+
 <script> document.getElementById("nav_link_devblog").classList.add("active");</script>
 </body>
 

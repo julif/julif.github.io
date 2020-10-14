@@ -6,10 +6,66 @@ Author: Julif
 body{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0px auto;
-  /* background-color: #e2e8f1; */
-  background-color: white;
+   background-color: #e2e8f1; 
+ 
 
   }
+  #home{
+    background-color: white;
+  }
+
+  #devblog{
+    background-color: white;
+  }
+
+
+  #header2{
+    padding-bottom: 30px;       
+    background-color: #1b1c2b;
+    color: snow;
+  }
+
+  #header2 #logo_container{  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 83px;
+    padding-top: 40px;
+  }
+  #header2 #logo_container #logo{
+    width: 110px;
+      height: auto;
+  }
+  #header2 h1{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 10px;
+    /* color: #7a82a0; */
+    margin-bottom: 40px;
+  }
+  #main_navbar{text-align: center;}
+
+  #header2 #main_navbar a {
+    color: #53546b;
+    background-color: #1b1c2b;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#header2 #main_navbar a:hover{    background-color: #53546b4f;}
+
+#header2 #main_navbar .active{
+  background-color: #2daae2;
+  color: white;
+  border-radius: 8px;
+  
+}
+#header2 #main_navbar .active:hover{ background-color: #2daae2; }
 banner{
   background-image: url('img/banner_background.png');
   display: block;
@@ -224,7 +280,9 @@ article .thumbnail {
     height: 100%;
     width: 101%;
     margin: 0;
-    transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;    
+    background-position: center;
+
 }
 article .post_content{
   padding-left: 15px;

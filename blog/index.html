@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
+    <script > var current_page = "blog"; console.log( "pagina: "+ current_page )</script>
 
 
     <!-- entradas de blog -->
@@ -59,8 +60,8 @@ right: 0;" id="btn_next"> Siguiente  <i class="fas fa-chevron-right"></i></a>
 // blog_entrys.forEach(show_post);   console.log("page:"+ current_page);
 
 
-var current_page =   window.location.search;
-current_page = current_page.substr(6,);
+var current_page_pagination =   window.location.search;
+current_page_pagination = current_page_pagination.substr(6,);
 
 // if ( current_page == "" ){ 
 //   current_page = 0; 

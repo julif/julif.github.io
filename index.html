@@ -6,23 +6,25 @@
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="style.css">
+    <script > var current_page = "home"; console.log( "pagina: "+ current_page )</script>
     <style>
       footer {
     margin-top: 0px;
 }
     </style>
 </head>
-<body> 
-  <banner>
-    <header id="header"></header>
+<body id="home"> 
+  <header id="header"></header>
+<!--   <banner>
+   
     <h1> Inicio </h1>
-  </banner>
+  </banner> -->
 <!-- <main></main> -->
 <footer id="footer"></footer>
 
 <script src="navbar_constructor.js"></script>
 <script src="footer_constructor.js"></script>
-<script> document.getElementById("nav_link_home").classList.add("active");</script>
+ <script> document.getElementById("nav_link_home").classList.add("active");</script> 
 </body>
-
+<link rel="stylesheet" href="style.css">
 </html>
