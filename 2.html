@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title> julif.github.io </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{background-color: white;}
+      nav {
+        background-color: white;
+        color: #97a0ad;
+        text-transform: capitalize;
+        border-bottom: 3px solid #e5e7ea!important;
+
+        text-align: end;
+    padding-right: 15px;
+
+    
+      }
+    
+      footer {margin-top: 0px;}
+      #julif_the_logo{height: 65px;
+    width: 75px;
+    background-color: #231e2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 150px;
+    background-color: #231e2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    background-color: white;
+    background-color: transparent;
+    color: black;
+
+    font-weight: 700;
+    color: #97a0ad;
+   
+  
+  }
+  #julif_the_logo,nav a, nav{ color: #40495d!important;}
+
+  main {position: relative;}
+    </style>
+</head>
+<body> 
+    <header id="header"></header>
+    
+ 
+<main>
+  <h1> Inicio </h1>
+</main> 
+ <footer id="footer"></footer> 
+
+<script src="navbar_constructor.js"></script>
+<script src="footer_constructor.js"></script> 
+<script>
+      //incluye nav dentro de #header
+      var julif_logo =  document.createElement("div");
+      julif_logo.setAttribute("id", "julif_the_logo");
+      
+ document.getElementById("header").appendChild(julif_logo); 
+
+ document.getElementById("julif_the_logo").innerHTML=" Julian Filardi";
+</script>
+</body>
+
+</html>
