@@ -108,7 +108,7 @@ if(  status == "online"){
   document.getElementById("nav_link_devblog").href= "https://julif.github.io/devblog";
 }
 else{
-  if( current_page == "home"){
+  if( current_page == "home" || current_page == "tagg"){
     document.getElementById("nav_link_home").href= "index.html"; 
     document.getElementById("nav_link_blog").href= "blog/index.html";
     document.getElementById("nav_link_devblog").href= "devblog/index.html";

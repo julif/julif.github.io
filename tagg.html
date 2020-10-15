@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>   Blog de Julian Filardi </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="style.css">
+    <script > var current_page = "tagg"; console.log( "pagina: "+ current_page )</script>
+     <!-- entradas de blog -->
+     <script src="blog-entrys.js"></script>
+</head>
+<body id="tagg"> 
+  <header id="header"></header>
+  <main> 
+    <h1 id="titulo" class="center"> tagg </h1>
+    <div id="publicaciones"></div>
+  </main>
+  <footer id="footer"></footer>
+ 
+</body>
+<script src="navbar_constructor.js"></script>
+<script src="under_post_constructor.js"></script>
+<script src="footer_constructor.js"></script>
+
+
+<script>
+var tagg =  location.search
+//tagg.replace(/%/g,' ');
+tagg = tagg.replace(/%20/g, ' ');
+tagg = tagg.substring(1);
+
+
+  console.log(" busqueda: " + tagg);
+
+
+
+
+
+  document.getElementById("titulo").innerHTML = tagg;
+
+  // const result = blog_entrys.filter(etiquetas == tagg);
+  blog_entrys.forEach(filter_tagg)
+  // blog_entrys.forEach(show_post);
+  function filter_tagg(item, index) {
+
+
+    item.etiquetas.forEach(function(elemento, indice, array) {
+    //console.log(elemento, indice);
+
+    if( elemento == tagg ){     
+      // console.log(elemento); 
+      show_post(item, index)}
+  })
+    
+  }
+
+
+  function show_post(item, index) {
+
+var d = new Date(item.fecha);
+// console.log( d);
+
+
+
+if (item.thumbnail  === undefined || item.thumbnail  == ''|| item.thumbnail  == ' '|| item.thumbnail  == null)  {  
+
+  var str  = item.entrada;
+  var elem = document.createElement('div');
+ elem.style.display = 'none';
+ document.body.appendChild(elem);
+ elem.innerHTML = str;
+
+ var imagen = elem.querySelector('img');
+//  console.log(imagen)
+
+if (imagen == null) {
+  item.thumbnail = 'img/thumb_default.png'
+} else {
+  
+  var thumb_extention= imagen.src.split("/").pop().split(".")[1];
+ var thumb_name= imagen.src.split("/").pop().split(".")[0];
+
+ item.thumbnail=  thumb_name + "."+thumb_extention;
+ item.thumbnail = "media/" +item.thumbnail;
+}
+// console.log( item.thumbnail );
+
+
+
+}
+
+
+if (item.custom_link  === undefined || item.custom_link  == ''|| item.custom_link  == ' '|| item.custom_link  == null) {
+  var post_link = "blog_post.html?post_id=" + item.id;
+} else {
+  var post_link = item.custom_link;
+}
+
+
+var month = d.getMonth() + 1 ;// month 
+// en el caso de que no halla thumb asignar thumb por default
+//if ( item.thumbnail  === undefined) {  item.thumbnail = 'img/thumb_default.png'}
+
+// document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
+document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( " + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='./blog/" + post_link + "'><img class='thumbnail_img' src='" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='./blog/" + post_link + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+ month +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
+
+}
+
+
+
+</script>
+</html>

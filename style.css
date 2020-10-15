@@ -6,7 +6,8 @@ Author: Julif
 body{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0px auto;
-   background-color: #e2e8f1; 
+   /* background-color: #e2e8f1;  */
+   background-color: #ffffff;
  
 
   }
@@ -24,7 +25,20 @@ body{
 
 
   #blog_entry #fecha , #devblog_entry #fecha{
+    margin-bottom: 0px;
+  }
+  #etiquetas{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 80px;
+  } 
+  .etiqueta{
+    /* background-color: red; */
+    background-color: #2daae2;
+    padding: 7px;
+    color: white;
+    margin: 5px;
   }
   #blog_entry #titulo, #devblog_entry #titulo{
     margin-top: 80px!important;
@@ -325,7 +339,8 @@ nav{
    text-align: center;
    padding-bottom: 20px;
    padding-top: 20px;
-   background-color: #111c29;
+   /* background-color: #111c29; */
+   background-color: #0f0f15;
    color: #97a0ad;
    color: #ffffff;
    text-transform: capitalize;
