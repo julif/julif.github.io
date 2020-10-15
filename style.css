@@ -21,6 +21,15 @@ body{
   }
 
 
+
+
+  #blog_entry #fecha , #devblog_entry #fecha{
+    margin-bottom: 80px;
+  }
+  #blog_entry #titulo, #devblog_entry #titulo{
+    margin-top: 80px!important;
+  }
+
   #header2{
     padding-bottom: 40px;       
     background-color: #1b1c2b;
@@ -268,19 +277,19 @@ banner .active{
 
 
 #blog_entry, #devblog_entry{background-color: white;}
-#blog_entry, #devblog_entry h1{
+#blog_entry h1, #devblog_entry h1{
   font-size: 3em;
   margin-bottom: 0;
   margin-top: 50px;
 }
-#blog_entry, #devblog_entry nav{
+#blog_entry nav, #devblog_entry nav{
   background-color: white;
   color: #97a0ad;
   text-transform: capitalize;
   border-bottom: 3px solid #97a0ad40; 
 }
-#blog_entry, #devblog_entry nav a{color: #97a0ad;}
-#blog_entry, #devblog_entry a{text-decoration: none;}
+#blog_entry nav a, #devblog_entry nav a{color: #97a0ad;}
+#blog_entry a #devblog_entry a{text-decoration: none;}
 
 
 

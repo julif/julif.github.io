@@ -31,6 +31,10 @@ if( current_page == "blog" || current_page == "devblog" ){
  
  //  document.getElementById("header").innerHTML += " <nav>" ; 
  document.getElementById("header2").innerHTML += "<div  id='logo_container'><img id='logo' src='../img/logo.png'></div>";
+ //document.getElementById("header2").innerHTML += "<div  id='logo_container'> <img id='logo' src='../img/logo.svg' alt='Julif logo'></img></div>";
+
+
+
  document.getElementById("header2").innerHTML += " <h1> Julian Filardi </h1>";
 //  document.getElementById("header2").innerHTML += " <p id='sub_titulo'> Desarrollador web </p>";
  document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a></div>";
