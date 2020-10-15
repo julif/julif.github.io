@@ -650,9 +650,10 @@ article .post_thumbnail {
 
 
 
-  .post_class_lista{display: block;}
+
+ .post_class_lista{display: block;}
   .post_class_lista .thumbnail img {display: none;}
-  .post_class_lista article {
+  #tagg article, .post_class_lista article {
     display: table;
     display: flex;
     padding-left: 0px;
@@ -669,7 +670,7 @@ article .post_thumbnail {
     margin-bottom: 5px;
 
 }
-.post_class_lista article .post_content { 
+#tagg .post_content, .post_class_lista article .post_content { 
   padding-right: 0px; 
   overflow: hidden; 
 
@@ -683,9 +684,9 @@ article .post_thumbnail {
   margin-top: -10px;
 
 }
-.post_class_lista  article .post_date {display: none;}
-.post_class_lista  article .post_snippet{ display: none;}
-.post_class_lista article .post_thumbnail {
+#tagg .post_date, .post_class_lista  article .post_date {display: none;}
+#tagg .post_snippet, .post_class_lista  article .post_snippet{ display: none;}
+#tagg .post_thumbnail, .post_class_lista article .post_thumbnail {
   overflow: hidden;
   /* width: 100px; */
   /* height: 100px; */
@@ -694,7 +695,7 @@ article .post_thumbnail {
   width: 120px;
   height: 72px;
 }
-.post_class_lista article h2 {
+#tagg article h2, .post_class_lista article h2 {
   margin-bottom: 5px;
   font-size: 20px;
   text-align: initial;
