@@ -32,7 +32,7 @@ if( current_page == "blog" || current_page == "devblog" ){
 
  document.getElementById("header2").innerHTML += " <h1> Julian Filardi </h1>";
 //  document.getElementById("header2").innerHTML += " <p id='sub_titulo'> Desarrollador web </p>";
- document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a></div>";
+ document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> Blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> Devblog </a></div>";
 
 // document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a></div>";
 
@@ -50,7 +50,7 @@ else if( current_page == "home" ){
  document.getElementById("header2").innerHTML += "<div  id='logo_container'><img id='logo' src='img/logo.png'></div>";
  document.getElementById("header2").innerHTML += " <h1> Julian Filardi </h1>";
 //  document.getElementById("header2").innerHTML += " <p id='sub_titulo'> Julif </p>";
- document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a></div>";
+ document.getElementById("header2").innerHTML += " <div id='main_navbar'> <a  id='nav_link_home' href='../index.html'> Home </a><a id='nav_link_blog' href='index.html'> Blog </a><a id='nav_link_devblog'  href='../devblog/index.html'> Devblog </a></div>";
 
 
 
@@ -89,8 +89,8 @@ else{
  //  document.getElementById("header").innerHTML += " <nav>" ; 
  document.getElementById("main_navbar").innerHTML += "<a  id='nav_link_home' href='../index.html'> Home </a>";
 //  document.getElementById("main_navbar").innerHTML += "<a href='index.html' class='active'> blog </a>";
- document.getElementById("main_navbar").innerHTML += "<a id='nav_link_blog' href='index.html'> blog </a>";
- document.getElementById("main_navbar").innerHTML += "<a id='nav_link_devblog'  href='../devblog/index.html'> devblog </a>" ;
+ document.getElementById("main_navbar").innerHTML += "<a id='nav_link_blog' href='index.html'> Blog </a>";
+ document.getElementById("main_navbar").innerHTML += "<a id='nav_link_devblog'  href='../devblog/index.html'> Devblog </a>" ;
 }
 
 
