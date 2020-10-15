@@ -102,29 +102,29 @@ else{
 
 
 
-
-if( current_page == "home"){
-
-  //crea el elemento nav
-
-
-
-  document.getElementById("nav_link_home").href= "index.html"; 
-  document.getElementById("nav_link_blog").href= "blog/index.html";
-  document.getElementById("nav_link_devblog").href= "devblog/index.html";
+if(  status == "online"){
+  document.getElementById("nav_link_home").href= "https://julif.github.io/"; 
+  document.getElementById("nav_link_blog").href= "https://julif.github.io/blog";
+  document.getElementById("nav_link_devblog").href= "https://julif.github.io/devblog";
 }
-if( current_page == "blog" || current_page == "blog_entry"){
- 
+else{
+  if( current_page == "home"){
+    document.getElementById("nav_link_home").href= "index.html"; 
+    document.getElementById("nav_link_blog").href= "blog/index.html";
+    document.getElementById("nav_link_devblog").href= "devblog/index.html";
+  }
+  if( current_page == "blog" || current_page == "blog_entry"){
+    document.getElementById("nav_link_home").href= "../index.html"; 
+    document.getElementById("nav_link_blog").href= "index.html";
+    document.getElementById("nav_link_devblog").href= "../devblog/index.html";
+  }
+  if( current_page == "devblog" || current_page == "devblog_entry"){
+    document.getElementById("nav_link_home").href= "../index.html"; 
+    document.getElementById("nav_link_blog").href= "../blog/index.html";
+    document.getElementById("nav_link_devblog").href= "index.html";
+  }
+}
 
-  document.getElementById("nav_link_home").href= "../index.html"; 
-  document.getElementById("nav_link_blog").href= "index.html";
-  document.getElementById("nav_link_devblog").href= "../devblog/index.html";
-}
-if( current_page == "devblog" || current_page == "devblog_entry"){
-  document.getElementById("nav_link_home").href= "../index.html"; 
-  document.getElementById("nav_link_blog").href= "../blog/index.html";
-  document.getElementById("nav_link_devblog").href= "index.html";
-}
 
 
 
