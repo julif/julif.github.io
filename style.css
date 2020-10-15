@@ -68,6 +68,13 @@ body{
   
 }
 #header2 #main_navbar .active:hover{ background-color: #2daae2; }
+
+#header2  #sub_titulo{
+  text-align: center;
+    margin-top: -40px;
+    margin-bottom: 45px;
+    color: #535461;
+}
 banner{
   background-image: url('img/banner_background.png');
   display: block;
@@ -108,6 +115,9 @@ about_me #img_container{
   height: 400px;
   background-color: #1b1b25;
   width: 350px;    
+
+  height: 300px;
+    width: 250px;
   background-image: url(img/foto.jpg);
   background-position: center;
    background-size: contain;
