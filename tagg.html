@@ -25,13 +25,14 @@
 
 
 <script>
+//toma el tagg de la url
 var tagg =  location.search
-//tagg.replace(/%/g,' ');
+//reemplaza los %20 con epacios
 tagg = tagg.replace(/%20/g, ' ');
+//quita el ? al principio de el tagg
 tagg = tagg.substring(1);
 
-
-  console.log(" busqueda: " + tagg);
+console.log(" busqueda: " + tagg);
 
 
 
@@ -39,20 +40,15 @@ tagg = tagg.substring(1);
 
   document.getElementById("titulo").innerHTML = tagg;
 
-  // const result = blog_entrys.filter(etiquetas == tagg);
-  blog_entrys.forEach(filter_tagg)
-  // blog_entrys.forEach(show_post);
+
+  blog_entrys.forEach(filter_tagg);
+
   function filter_tagg(item, index) {
-
-
     item.etiquetas.forEach(function(elemento, indice, array) {
-    //console.log(elemento, indice);
-
-    if( elemento == tagg ){     
-      // console.log(elemento); 
-      show_post(item, index)}
-  })
-    
+      if( elemento == tagg ){ 
+        show_post(item, index)
+      }
+    })
   }
 
 
