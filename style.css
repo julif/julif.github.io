@@ -13,7 +13,9 @@ body{
   #home, #devblog{
     background-color: white;
   }
-
+  #home footer {
+    margin-top: 0px;
+}
   #blog{
     background-color: white;
   }
@@ -89,6 +91,27 @@ banner{
 }
 
 
+
+
+
+
+about_me {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* background-color: #101017; */
+  background-color: #0f0f15;
+}
+container {
+  display: block;
+  /* background-color: white; */
+  margin: 0px auto;
+  max-width: 1200px;
+}
+.media-container-row {
+  display: flex;
+  flex-wrap: none;
+}
  #social_links_container{background-color: #0f0f15;
 padding-bottom: 5px;
 padding-top: 5px;
@@ -662,6 +685,7 @@ footer {
   /* margin-top: -58px;
   margin-top: -138px; */
   background-color: #111c29;
+  background-color: #0f0f15;
   padding: 25px;
   padding-bottom: 60px;
   padding-top: 60px;
