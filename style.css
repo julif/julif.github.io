@@ -102,6 +102,25 @@ about_me {
   /* background-color: #101017; */
   background-color: #0f0f15;
 }
+
+about_me #img_section{  }
+about_me #img_container{
+  height: 400px;
+  background-color: #1b1b25;
+  width: 350px;    
+  background-image: url(img/foto.jpg);
+  background-position: center;
+   background-size: contain;
+  }
+  about_me #text_section{
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
 container {
   display: block;
   /* background-color: white; */
@@ -112,6 +131,27 @@ container {
   display: flex;
   flex-wrap: none;
 }
+
+
+
+@media only screen  and (max-width: 800px) { 
+  about_me #img_section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  about_me #img_container{
+    height: 300px;
+    width: 250px;
+  }
+  about_me #text_section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .media-container-row{
+    display: block;
+  }
+ }
  #social_links_container{background-color: #0f0f15;
 padding-bottom: 5px;
 padding-top: 5px;
