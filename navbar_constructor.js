@@ -1,21 +1,16 @@
 
- var raiz = document.URL.split('/').slice(9, -1).join('/');
- console.log("raiz: " +raiz);
- var status;
- 
- if ( raiz.length >= 3) {
-    
-    // console.log( "9: " + document.URL.split('/').slice(9, -1).join('/')  );
-    // var fuente = document.URL.split('/').slice(9, -1).join('/');
+//check if online
 
-    console.log('status: online');
-    status = "online";
+//console.log( "origin: " + window.location.origin);
+var status;
+
+ if (  window.location.origin ==  'file://') {
+    console.log('status: offline');
+    status = "offline";
    
  } else {
-  /*  var fuente = document.URL.split('/').slice(2, -1).join('/');
-   console.log( "2: " + document.URL.split('/').slice(2, -1).join('/')  ); */
-   console.log('status: offline');
-   status = "offline";
+   console.log('status: online');
+   status = "online";
  }
 
 
