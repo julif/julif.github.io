@@ -10,11 +10,11 @@ body{
  
 
   }
-  #home{
+  #home, #devblog{
     background-color: white;
   }
 
-  #devblog{
+  #blog{
     background-color: white;
   }
 
@@ -87,6 +87,77 @@ banner{
   box-shadow: inset 0 0 140px 70px #0b0d13!important;
 
 }
+
+
+ #social_links_container{background-color: #0f0f15;
+padding-bottom: 5px;
+padding-top: 5px;
+text-align: center;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.box a{
+  cursor: pointer;
+}
+.box a:hover{
+   opacity: 90%; 
+}
+#social_links_container a {
+  padding: 6px;
+  padding-top: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* background-color: #1b1c2b!important; */
+}
+#twitter_btn{
+  background-color: #2daae2;
+ fill: white; 
+  /* background-color: black; */
+  /* fill: #2daae2; */
+}
+#facebook_btn{
+  background-color: #4064ac;
+  fill: white; 
+}
+#deviantart_btn{
+  background-color: #3d584e;
+  fill: white; 
+}
+#tumblr_btn{
+  background-color: #261242;
+  fill: white; 
+}
+#github_btn{
+  background-color: #1b1c2b;
+  fill: white; 
+}
+#github_btn{
+  background-color: #1b1c2b;
+  fill: white; 
+}
+#instagram_btn{
+  background-color: #b12388;
+  fill: white; 
+}
+#kofi_btn{
+  background-color: #29abe0;
+  fill: white; 
+}
+
+
+
+
+
 banner nav{
   position: absolute;
   top: 0;
@@ -97,9 +168,11 @@ banner nav{
   background-color: #ff000000;
   border-bottom: 2px solid #ffffff0f;
 
+
  
 
 }
+
 banner .active{ 
   color: white;
   /* color: #4ab9e4; */
