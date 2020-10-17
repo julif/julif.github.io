@@ -20,65 +20,65 @@
         <p> Este es el código javascript que voy a usar en todas mis weebapps para detectar el idioma de navegador y almacenarlo en una variable.</p>
         <p>la funcion detectaridioma funciona como filtro, en este ejemplo el idioma predeterminado es el ingles, en caso de que el idioma detectado no sea español la variable de idioma quedara con el valor de idioma predeterminado, en esta caso el ingles.</p>
         <h3>HTML:</h3>
-        <pre class="prettyprint lang-js" >
-          //variables de idioma
-          var idioma= "ingles"; //idioma predeterminado
-          var idiomanavegador= navigator.language;
-          //filtrar el idioma de el navegador
-          detectarIdioma();
-        </pre>
+<pre class="prettyprint lang-js" >
+//variables de idioma
+var idioma= "ingles"; //idioma predeterminado
+var idiomanavegador= navigator.language;
+//filtrar el idioma de el navegador
+detectarIdioma();
+</pre>
         <p>En caso de que se use un selector de idioma predeterminado simplemente hay que agrear lo siguiente y cambiar NombreProyecto por el nombre que corresponda.</p>
         <h3>detectaridioma.js:</h3>
-        <pre class="prettyprint lang-js" >
-          // idioma
-          //variables de idioma
-          idiomanavegador= navigator.language;//idioma del navegador.
-        var idioma= "ingles";//idioma predeterminado.
-          //si no hay un idioma preseleccionado no pasa nada.
-          if (localStorage.NombreProyectoIdiomaSeleccionado == undefined){ detectarIdioma();};
-        //si  hay un idioma preseleccionado idoma pasa a ser el idioma preseleccionado.
-          if (localStorage.NombreProyectoIdiomaSeleccionado != undefined){ idioma=localStorage.NombreProyectoIdiomaSeleccionado}
-        </pre>
+<pre class="prettyprint lang-js" >
+// idioma
+//variables de idioma
+idiomanavegador= navigator.language;//idioma del navegador.
+var idioma= "ingles";//idioma predeterminado.
+//si no hay un idioma preseleccionado no pasa nada.
+if (localStorage.NombreProyectoIdiomaSeleccionado == undefined){ detectarIdioma();};
+//si  hay un idioma preseleccionado idoma pasa a ser el idioma preseleccionado.
+if (localStorage.NombreProyectoIdiomaSeleccionado != undefined){ idioma=localStorage.NombreProyectoIdiomaSeleccionado}
+</pre>
         <p>Esta es la version especifica para filtrar todos ( o al menos la mayoria ) los tipos de español</p>
         <h3>detectaridioma.js:</h3>
-        <pre class="prettyprint lang-js" >
-          function detectarIdioma(){
-            filtrarespañol(); }//español}
-        }
-          function filtrarespañol(){
-          //español-españa
-            if (idiomanavegador == "es" || idiomanavegador == "es-ES" ) { idioma="español";};
-          //español-latinoamerica
-            if (idiomanavegador == "es-419" || idiomanavegador == "es-LA"|| idiomanavegador == "es-XL") { idioma="español";};
-          
-            if (idiomanavegador == "es-AR") { idioma="español";};
-            if (idiomanavegador == "es-MX") { idioma="español";};
-            if (idiomanavegador == "es-US") { idioma="español";};
-            if ( idiomanavegador == "es-VE") { idioma="español";};
-            if ( idiomanavegador == "es-UY") { idioma="español";};
-            if ( idiomanavegador == "es-CO") { idioma="español";};
-            if ( idiomanavegador == "es-CL") { idioma="español";};
-            if (idiomanavegador == "es-BR") { idioma="español";};
-            if (idiomanavegador == "es-BO") { idioma="español";};
-            if (idiomanavegador == "es-PA") { idioma="español";};
-            if (idiomanavegador == "es-PE") { idioma="español";};
-        }
-        </pre>
+<pre class="prettyprint lang-js" >
+function detectarIdioma(){
+    filtrarespañol(); }//español}
+}
+function filtrarespañol(){
+  //español-españa
+  if (idiomanavegador == "es" || idiomanavegador == "es-ES" ) { idioma="español";};
+  //español-latinoamerica
+  if (idiomanavegador == "es-419" || idiomanavegador == "es-LA"|| idiomanavegador == "es-XL") { idioma="español";};
+
+  if (idiomanavegador == "es-AR") { idioma="español";};
+  if (idiomanavegador == "es-MX") { idioma="español";};
+  if (idiomanavegador == "es-US") { idioma="español";};
+  if ( idiomanavegador == "es-VE") { idioma="español";};
+  if ( idiomanavegador == "es-UY") { idioma="español";};
+  if ( idiomanavegador == "es-CO") { idioma="español";};
+  if ( idiomanavegador == "es-CL") { idioma="español";};
+  if (idiomanavegador == "es-BR") { idioma="español";};
+  if (idiomanavegador == "es-BO") { idioma="español";};
+  if (idiomanavegador == "es-PA") { idioma="español";};
+  if (idiomanavegador == "es-PE") { idioma="español";};
+}
+</pre>
         <h3>Extra</h3>
         <p>  se puede usar un redirect para que depediendo de el idioma se valla a otra pagina.</p>
         <h3>detectaridioma.js:</h3>
-        <pre class="prettyprint lang-js" >
-          function redirigir(){
-          
-            if( idioma="español"){
-              location.href ="http://www.pagina.com/es";
-              }
-              else {
-                location.href="http://www.pagina.com/en";
-              }
-            }
-          
-        </pre>
+<pre class="prettyprint lang-js" >
+function redirigir(){
+  
+  if( idioma="español"){
+    location.href ="http://www.pagina.com/es";
+    }
+    else {
+      location.href="http://www.pagina.com/en";
+    }
+  }
+}
+</pre>
       </div>
     </main>
     <div id="under_post"></div>

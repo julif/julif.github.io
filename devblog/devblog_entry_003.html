@@ -22,23 +22,23 @@
         <p>Los CPT pueden estar en los plugins o en el archivo functions.php, personalmente recomiedo que los CPT siempre sean plugins, de esa manera no se pierden al cambiar el tema de nuestro sitio.</p>
         <h3>Creando un CPT manualmente</h3>
         <p>en este ejemplo la funcion libros_cpt crea un nuevo custom post type llamado libros.</p>
-        <pre class="prettyprint lang-js" >
-          // la funcion libros_cpt
-          add_action( 'init', 'libros_cpt' );
-          function libros_cpt() {
-              // opciones del CTP
-              $args = array(
-              'public' => true,
-              'label' => 'Libros'
-            );
-            // enlaza la funcion al tema
-            register_post_type( 'libros', $args );
-          }
-        </pre>
+<pre class="prettyprint lang-js" >
+// la funcion libros_cpt
+add_action( 'init', 'libros_cpt' );
+function libros_cpt() {
+    // opciones del CTP
+    $args = array(
+    'public' => true,
+    'label' => 'Libros'
+  );
+  // enlaza la funcion al tema
+  register_post_type( 'libros', $args );
+}          
+</pre>
         <p>en el caso de que se quiera usar el cpt dentro de el tema pero sin llenar de codigo el archivo functions.php, se puede simplemente crear una carpeta en el tema llama custom_post_type donde se pueden alojar los cpt ya sea todos juntos o separados por archivos. Solo tenemos que enlazar esos archivos al archvo functions.php de la siguiente manera:</p>
-        <pre class="prettyprint lang-js" >
-          include_once "custom_post_type/libros_cpt.php"; // Custom Post:  Libros.
-        </pre>
+<pre class="prettyprint lang-js" >
+include_once "custom_post_type/libros_cpt.php"; // Custom Post:  Libros.
+</pre>
       </div>
     </main>
     <footer id="footer"></footer>

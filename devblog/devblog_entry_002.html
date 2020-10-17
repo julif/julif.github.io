@@ -19,44 +19,44 @@
       <div id="entrada">
         <p>la funcion responsive es el segundo paso despues de la funcion: detectar idioma. la funcion responsive debe ser llmada desde la javascript despues de el idioma. pero tambien debe ser llamada desde dentro de la etiqueta body, asi cada vez que el dispositivo cambia de tamaño la pagina se actualiza. onresize="responsive()"</p>
         <h3>html:</h3>   
-        <pre class="prettyprint lang-js" >
-          // tamaño
-          var plataform;
-         responsive();
-        </pre> 
+<pre class="prettyprint lang-js" >
+// tamaño
+var plataform;
+ responsive();
+</pre> 
         <h3> responsive.js :</h3>
-        <pre class="prettyprint lang-js" >
-          function responsive(){
-            if(window.innerHeight  window.innerWidth){plataform="portrait";}
-            if ( window.innerWidth > 1000) {plataform="desktop";}
-          
-            //avoidportrait();  (opcional)
-          
-            //console.log(" plataforma :"+ plataform);
-          };
-        </pre>
+<pre class="prettyprint lang-js" >
+function responsive(){
+  if(window.innerHeight  window.innerWidth){plataform="portrait";}
+  if ( window.innerWidth > 1000) {plataform="desktop";}
+
+  //avoidportrait();  (opcional)
+
+  //console.log(" plataforma :"+ plataform);
+};
+</pre>
         <p>extra, evitar portrait mode. para algunos casos especificos como el comic de shacta se puede anular el modo portrait de los dispositivos.</p>
-        <pre class="prettyprint lang-js" >
-          function avoidportrait(){
-            //.... hacer que no se permita el portrait
-             if ( plataform=="portrait") {
-               portraitdiv.style.display ="flex";
-               noportraitdiv.style.display ="none";
-               document.getElementById("plataform").innerHTML = "Portrait";
-             };
-             if ( plataform=="landscape") {
-               portraitdiv.style.display ="none";
-               noportraitdiv.style.display ="inherit";
-               document.getElementById("plataform").innerHTML = "Landscape";
-             };
-             if ( plataform=="desktop") {
-               portraitdiv.style.display ="none";
-               noportraitdiv.style.display ="inherit";
-               document.getElementById("plataform").innerHTML = "Desktop";
-             };
-           };
-        </pre>
-      </div>
+<pre class="prettyprint lang-js" >
+function avoidportrait(){
+  //.... hacer que no se permita el portrait
+   if ( plataform=="portrait") {
+     portraitdiv.style.display ="flex";
+     noportraitdiv.style.display ="none";
+     document.getElementById("plataform").innerHTML = "Portrait";
+   };
+   if ( plataform=="landscape") {
+     portraitdiv.style.display ="none";
+     noportraitdiv.style.display ="inherit";
+     document.getElementById("plataform").innerHTML = "Landscape";
+   };
+   if ( plataform=="desktop") {
+     portraitdiv.style.display ="none";
+     noportraitdiv.style.display ="inherit";
+     document.getElementById("plataform").innerHTML = "Desktop";
+   };
+};
+</pre>
+</div>
     </main>
     <div id="under_post"></div>
     <footer id="footer"></footer>
