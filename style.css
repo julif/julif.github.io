@@ -124,7 +124,30 @@ banner{
 
 
 
+introduction{
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* background-color: #101017; */
+  background-color: white;
+}
+introduction container{
+  max-width: 1400px;
+}
+.text_section{width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 
+}
+.text_section h2{    font-size: 3em;}
+.text_section p{    font-size: 20px;}
+.img_section{ width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 about_me {
   display: block;
   padding-top: 60px;
@@ -163,11 +186,20 @@ container {
 .media-container-row {
   display: flex;
   flex-wrap: none;
+  overflow: hidden;
 }
 
 
 
 @media only screen  and (max-width: 800px) { 
+
+  .imagen_second{
+    display: flex!important;
+    flex-direction: column-reverse;
+  }
+  .text_section{width: 90%; }
+  .text_section h2{text-align: center;}
+  .img_section{ width: 100%; }
   about_me #img_section{ 
     display: flex;
     justify-content: center;
@@ -203,7 +235,7 @@ text-align: center;
   cursor: pointer;
 }
 .box a:hover{
-   opacity: 90%; 
+   /* opacity: 90%;  */
 }
 #social_links_container a {
   padding: 6px;
@@ -221,10 +253,14 @@ text-align: center;
   /* background-color: black; */
   /* fill: #2daae2; */
 }
+#twitter_btn:hover{background-color: #1283b5;}
+
 #facebook_btn{
   background-color: #4064ac;
   fill: white; 
 }
+#facebook_btn:hover{ background-color: #1f4590;}
+
 #deviantart_btn{
   background-color: #3d584e;
   fill: white; 
@@ -237,6 +273,8 @@ text-align: center;
   background-color: #1b1c2b;
   fill: white; 
 }
+#github_btn:hover{background-color: #07070c;}
+
 #github_btn{
   background-color: #1b1c2b;
   fill: white; 
@@ -245,6 +283,8 @@ text-align: center;
   background-color: #b12388;
   fill: white; 
 }
+#instagram_btn:hover{background-color: #8e146b;}
+
 #kofi_btn{
   background-color: #29abe0;
   fill: white; 
