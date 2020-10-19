@@ -598,6 +598,10 @@ article .post_date{
   margin-top: 0px;
   margin-bottom: 13px;
 }
+
+.post_class_block article:hover {
+  box-shadow: rgba(30, 45, 62, 0.21) 0px 10px 15px -10px, rgba(31, 44, 60, 0.1) 0px 5px 40px -10px;
+}
 /* .post_class_block  article .post_thumbnail {height: auto;} */
 .post_class_block  article .post_thumbnail {
   background-color: #afafaf;
