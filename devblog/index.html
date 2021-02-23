@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title> Devblog </title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+     <!-- entradas de blog -->
+     <script src="../devblog-entrys.js"></script>
+     <script > var current_page = "devblog"; console.log( "pagina: "+ current_page )</script>
+</head>
+<body id="devblog"> 
+  <!-- <nav>
+    <a href="../index.html"> Inicio </a>
+    <a href="../blog/index.html"> blog </a>
+    <a href="index.html" class="active"> devblog </a>
+  </nav> -->
+  <header id="header">
+
+  </header>
+<!--   <div id="devblog_banner">
+  <h1 style="
+  margin: 0;
+"> DEVBLOG </h1></div> -->
+<main>
+
+  <div id="container_btn_post">
+   
+    <button id="btn_list_post" onclick="lista()"> <i class="fas fa-th-list"></i> </button>
+    <button id="btn_block_post" onclick="block()"> <i class="fas fa-th"></i> </button>
+    <button id="btn_full_post" onclick="full()"> <i class="far fa-square"></i> </button>
+    
+
+  </div>
+  <div id="publicaciones"></div>
+</main>
+<footer id="footer"></footer>
+<script>
+
+  blog_entrys.forEach(show_post);
+  
+  function show_post(item, index) {
+  
+
+  
+var d = new Date(item.fecha);
+
+
+
+
+if (item.thumbnail  === undefined || item.thumbnail  == ''|| item.thumbnail  == ' '|| item.thumbnail  == null) {  
+
+  var str  = item.entrada;
+  var elem = document.createElement('div');
+ elem.style.display = 'none';
+ document.body.appendChild(elem);
+ elem.innerHTML = str;
+
+ var imagen = elem.querySelector('img');
+
+if (imagen == null) {
+  item.thumbnail = 'img/thumb_default.png'
+} else {
+  
+  var thumb_extention= imagen.src.split("/").pop().split(".")[1];
+ var thumb_name= imagen.src.split("/").pop().split(".")[0];
+
+ item.thumbnail=  thumb_name + "."+thumb_extention;
+ item.thumbnail = "media/" +item.thumbnail;
+}
+console.log( item.thumbnail );
+
+
+
+}
+
+if (item.custom_link  === undefined || item.custom_link  == ''|| item.custom_link  == ' '|| item.custom_link  == null) {
+  var post_link = "devblog_post.html?post_id=" + item.id;
+} else {
+  var post_link = item.custom_link;
+}
+  
+
+var month = d.getMonth() + 1 ;// month 
+  // document.getElementById("publicaciones").innerHTML +=  "<article><h2>" + item.titulo + "</h2><span class='post_date'>"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</span></article>";
+  document.getElementById("publicaciones").innerHTML +=  "<article><section  class='post_thumbnail'><a class='thumbnail'  style='background-image: url( ../" + item.thumbnail + ");'  id='post_thumbnail_" + item.id + "' href='" + post_link + "'><img class='thumbnail_img' src='../" + item.thumbnail + "' ></a></section><section class='post_content'><a   href='" + post_link + "'><h2>" + item.titulo + "</h2></a><span class='post_date'>"+  d.getDate() +"/"+  month  +"/"+ d.getFullYear() +"</span><p class='post_snippet'>" + item.snippet + "</p><div class='post_full'> " + item.entrada + " </div></section></article>";
+
+}
+  
+    </script> 
+     <script>
+   //lista();
+
+
+  //estilo predeterminado
+   if ( localStorage.julifgithubio_devblog_poststyle_preference ==  undefined) {  lista();}
+   //asignar el tipo de post
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'full') {  full();}
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'block') {  block();}
+   if ( localStorage.julifgithubio_devblog_poststyle_preference == 'lista') {  lista();}
+
+  function full() {
+    
+    document.getElementById("btn_list_post").classList.remove("active");
+    document.getElementById("btn_block_post").classList.remove("active");
+
+    document.getElementById("btn_full_post").classList.add("active");
+    //remove
+    document.getElementById("publicaciones").classList.remove("post_class_block");
+    document.getElementById("publicaciones").classList.remove("post_class_lista");
+    //add
+    document.getElementById("publicaciones").classList.add("post_class_full");
+
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'full';
+
+  }
+  function block() {
+    document.getElementById("btn_list_post").classList.remove("active");
+    document.getElementById("btn_full_post").classList.remove("active");
+
+    document.getElementById("btn_block_post").classList.add("active");
+    //remove
+    document.getElementById("publicaciones").classList.remove("post_class_full");
+    document.getElementById("publicaciones").classList.remove("post_class_lista");
+    //add
+    document.getElementById("publicaciones").classList.add("post_class_block");
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'block';
+ 
+  }
+  function lista() {
+    document.getElementById("btn_block_post").classList.remove("active");
+    document.getElementById("btn_full_post").classList.remove("active");
+
+    document.getElementById("btn_list_post").classList.add("active");
+    //remove
+    document.getElementById("publicaciones").classList.remove("post_class_full");
+    document.getElementById("publicaciones").classList.remove("post_class_block");
+    //add
+    document.getElementById("publicaciones").classList.add("post_class_lista");
+
+    localStorage.julifgithubio_devblog_poststyle_preference = 'lista';
+ 
+  }
+  </script>
+ 
+<script src="../navbar_constructor.js"></script>
+<script src="../footer_constructor.js"></script>
+
+<script> document.getElementById("nav_link_devblog").classList.add("active");</script>
+</body>
+
+</html>

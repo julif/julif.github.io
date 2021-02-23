@@ -1,90 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <title> Blog </title>
+    <title> julif.github.io </title>
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- --- Jquery --- --> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- entradas de blog -->
-    <script src="blog-entrys.js"></script>
-    <!-- entradas de devblog -->
-    <script src="devblog-entrys.js"></script>
-</head>
-<body> 
-  <main id="main">
-    <div id="prueba"></div>
-    <section id="publicaciones">
-      <div  id="btn_darkmode" onclick="myFunction()"><i class="fas fa-moon"></i></div>
-         <!-- blog entrys -->
-         <h1>Blog:</h1>
-         <div id="blog_div"></div>
-         <h1>Devblog:</h1>
-         <!-- devblog entrys -->
-         <div id="devblog_div"></div>
-    </section>
-  </main>
-</body>
-<script>
-  /*    for (i = 0; i <  5; i++) {
-      document.getElementById("publicaciones").innerHTML += "<article> <h2 class='post_title' ><a 	onclick=\"get_current_id(this)\"  post_id=\""+blog_entrys[i].id  +"\" href=\"javascript:pasarVariables('blog_single.html', 'post_id')\" >"+ blog_entrys[i].titulo +"</a></h2> <p class='post_date'> Julif | "+ blog_entrys[i].fecha +"</p> "+ blog_entrys[i].entrada +"</article>";
-
-    } */
-  // blog_entrys.forEach(show_post); 
-    // function myFunction(item, index) {
-  //   document.getElementById("publicaciones").innerHTML += index + ":" + item.titulo + "<br>";
-  // }
-
-  show_the_post_in_destiny(blog_entrys, "blog_div")
-  show_the_post_in_destiny(devblog_entrys, "devblog_div")
-
-function show_the_post_in_destiny(arr, div){
-
-  arr.forEach(show_post);
-
-  function show_post(item, index){
-    var d = new Date(item.fecha);
-
-    document.getElementById(div).innerHTML +=  "<article><h2>" + item.titulo + "</h2><p class=\"post_date\">"+  d.getDate() +"/"+ d.getMonth() +"/"+ d.getFullYear() +"</p><div class='b_content' id='contenido_" + item.id +"'> contenido sin modificar </div> </article>";
-  
-   
-
- 
-
-  }
-  
+    <script > var current_page = "home"; console.log( "pagina: "+ current_page )</script>
+    <style>
+      footer {
+    margin-top: 0px;
 }
-
-
-$('.b_content').each(function() {
-  var str = this.id;
-var res = str.substring(10 , str.length);//le quita contenido_
-
-
-
-  console.log(res);
-    $("#"+ this.id +"").load("post/"+ res +".html");
-});
-
-</script>
-<script>
+    </style>
+</head>
+<body id="home"> 
+  <header id="header"></header>
+<!--   <banner>
+   
+    <h1> Inicio </h1>
+  </banner> -->
+<!-- <main></main> -->
+<introduction>
+  <container>
+    <div class="media-container-row imagen_second">
+      <div class="text_section"> 
+        <div>
+          <h2> Bienvenidos</h2>
+          <p> Esta es mi pagina web principal, en donde les muestro un resumen de mis dibujos, proyectos, ideas y pensamientos en general. </p>
+          <p> Siempre estoy en busqueda de comentarios y critica constructiva.  </p>
+        </div> 
+      </div>
+      <div class="img_section"> <img  width="95%" src="media/cdcdcdcd-1024x576.png"> </div>
+    </div> 
   
+  </container>
+ 
+</introduction>
+<about_me>
+  <container>
+    <div class="media-container-row">
+      <div id="img_section"> 
+        <!-- <img src="img/foto.jpg" style="    border-radius: 15px;height: 450px;width: auto;"> -->
+         <div id="img_container"></div>
+      </div>
+      <div id="text_section"> 
+              
+            <div>
+              <h1  style="     font-weight: 100;  padding-bottom: 1rem!important;   color: #ffffff; font-size: 3rem;margin-top: 0px;display: contents;">Sobre mi:</h1>
+              <p style="color:  #ffffff6e;font-size: 20px;">Mi nombre es <span style="color: white;">Julian Filardi</span> tengo <span id="edad"></span> años y soy un desarrollador web front end / ilustrador Argentino.</p>
+              <p  style="color: #ffffff6e;font-size: 20px;">Me especializo en crear themes para wordpress y pequeños juegos simples para navegador utilizando javascript vainilla.</p>
+            </div>
+            <script>  
+            function getAge(DOB) {
+              var today = new Date();
+              var birthDate = new Date(DOB);
+              var age = today.getFullYear() - birthDate.getFullYear();
+              var m = today.getMonth() - birthDate.getMonth();
+              if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age = age - 1;
+              }
+              return age;
+            }
 
-  //tema por defecto
-  var dark_theme = false; 
+            var edad =  getAge("4/7/1990");
+            // console.log('edad: ' + edad);
+  
+            document.getElementById("edad").innerHTML = edad; 
+            </script>
+        
+      </div>
 
-  if (localStorage.darkmode != undefined){   JSON.parse(localStorage['darkmode']); dark_theme = localStorage.darkmode; }
+    </div> 
+</container>
+</about_me>
+<footer id="footer"></footer>
 
-if (dark_theme == true || dark_theme == "true" ) {
-    document.body.classList = "dark-mode";
-  } 
-  function myFunction() {
-     document.body.classList.toggle("dark-mode");
-     dark_theme = !dark_theme;
-     localStorage.darkmode = dark_theme; //guarda el tema seleccionado en un localstorage
-  }
-
-  </script>
+<script src="navbar_constructor.js"></script>
+<script src="footer_constructor.js"></script>
+ <script> document.getElementById("nav_link_home").classList.add("active");</script> 
+</body>
+<link rel="stylesheet" href="style.css">
 </html>
