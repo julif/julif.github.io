@@ -10,6 +10,18 @@
 
 
 var blog_entrys = [
+  
+    
+  { 
+    titulo: 'Proyecto deckbuilder'  ,
+    id: 'blog_018',
+    fecha: [2021, 3, 3],
+    custom_link: 'blog_entry_018.html',
+    // thumbnail: 'media/thumb_deckbuilder.png',
+    snippet: ' un juego de cartas para navegador' ,
+    etiquetas: ["desarollo web", "desarollo de videojuegos"],
+    entrada:  ' ... '    
+  },
   { 
     titulo: 'art vs artist 2020'  ,
     id: 'blog_017',
