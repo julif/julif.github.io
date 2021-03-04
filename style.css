@@ -906,3 +906,42 @@ main{
 }
 
 @media only screen  and (max-width: 800px) { .prettyprint {padding: 30px !important;} }
+
+
+
+.wp-block-video{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 0;
+}
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.iframe_container{
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: grey;
+}
+iframe{
+  border: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}

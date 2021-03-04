@@ -22,24 +22,25 @@ var blog_entrys = [
     etiquetas: ["desarollo web", "desarollo de videojuegos"],
     entrada:  ' ... '    
   },
-  { 
-    titulo: 'Dress-up de Bunny'  ,
-    id: 'blog_018',
-    fecha: [2021, 2, 26],
-    custom_link: 'blog_entry_018.html',
-    // thumbnail: 'media/thumb_deckbuilder.png',
-    snippet: 'un dress-up web para echo con html y javascript' ,
-    etiquetas: ["desarollo web", "desarollo de videojuegos","dress-up"],
-    entrada:  ' ... '    
-  },
+ 
   { 
     titulo: 'art vs artist 2020'  ,
-    id: 'blog_017',
+    id: 'blog_018',
     fecha: [2020, 10, 13],
     custom_link: ' ',
     snippet: 'art vs artist' ,
     etiquetas: ["art vs artist"],
     entrada:  '<img src="../media/art_vs_artist_2020.jpg"></img> <p>#artvsartist #artvsartist2020 #julif </p>'    
+  },
+  { 
+    titulo: 'Dress-up de Bunny'  ,
+    id: 'blog_017',
+    fecha: [2020, 9, 30],
+    custom_link: 'blog_entry_017.html',
+     thumbnail: 'media/017.png',
+    snippet: 'un dress-up web para echo con html y javascript' ,
+    etiquetas: ["desarollo web", "desarollo de videojuegos","dress-up"],
+    entrada:  ' ... '    
   },
   { 
     titulo: 'formato helltaker'  ,
