@@ -25,6 +25,15 @@ var blog_entrys = [
   { 
     titulo: 'art vs artist 2020'  ,
     id: 'blog_017',
+    fecha: [2021, 2, 26],
+    custom_link: 'blog_post_001.html',
+    snippet: 'art vs artist' ,
+    etiquetas: ["art vs artist"],
+    entrada:  '<img src="../media/art_vs_artist_2020.jpg"></img> <p>#artvsartist #artvsartist2020 #julif </p>'    
+  },
+  { 
+    titulo: 'art vs artist 2020'  ,
+    id: 'blog_017',
     fecha: [2020, 10, 13],
     custom_link: ' ',
     snippet: 'art vs artist' ,
