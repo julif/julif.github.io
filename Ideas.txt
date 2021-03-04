@@ -1,0 +1,1 @@
+- agregar links a las pubiaciones anteriores y siguientes dentro de el query correspondiente.

@@ -14,22 +14,23 @@ var blog_entrys = [
     
   { 
     titulo: 'Proyecto deckbuilder'  ,
-    id: 'blog_018',
+    id: 'blog_019',
     fecha: [2021, 3, 3],
-    custom_link: 'blog_entry_018.html',
+    custom_link: 'blog_entry_019.html',
     // thumbnail: 'media/thumb_deckbuilder.png',
     snippet: ' un juego de cartas para navegador' ,
     etiquetas: ["desarollo web", "desarollo de videojuegos"],
     entrada:  ' ... '    
   },
   { 
-    titulo: 'art vs artist 2020'  ,
-    id: 'blog_017',
+    titulo: 'Dress-up de Bunny'  ,
+    id: 'blog_018',
     fecha: [2021, 2, 26],
-    custom_link: 'blog_post_001.html',
-    snippet: 'art vs artist' ,
-    etiquetas: ["art vs artist"],
-    entrada:  '<img src="../media/art_vs_artist_2020.jpg"></img> <p>#artvsartist #artvsartist2020 #julif </p>'    
+    custom_link: 'blog_entry_018.html',
+    // thumbnail: 'media/thumb_deckbuilder.png',
+    snippet: 'un dress-up web para echo con html y javascript' ,
+    etiquetas: ["desarollo web", "desarollo de videojuegos","dress-up"],
+    entrada:  ' ... '    
   },
   { 
     titulo: 'art vs artist 2020'  ,
