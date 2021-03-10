@@ -18,7 +18,7 @@ var blog_entrys = [
     fecha: [2021, 3, 3],
     custom_link: 'blog_entry_019.html',
     // thumbnail: 'media/thumb_deckbuilder.png',
-    thumbnail:'https://i.ibb.co/znTGS56/20210310-052611.png',
+    thumbnail:'media/20210310_052123.png',
     snippet: ' un juego de cartas para navegador' ,
     etiquetas: ["desarollo web", "desarollo de videojuegos"],
     entrada:  ' ... '    
