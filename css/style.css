@@ -1,0 +1,14 @@
+:root {}
+body{margin: 0px auto;}
+.contenido{
+  display: block;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+@media only screen and (max-width: 768px){
+  .contenido {
+      text-align: center;
+      max-width: 1600px;
+      padding: 10%;
+  }
+}
