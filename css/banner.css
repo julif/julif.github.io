@@ -1,6 +1,6 @@
 banner{
   background-color: #16182a87;
-  min-height: 100vh;
+  min-height: 95vh;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -16,20 +16,29 @@ banner{
 }
 banner h1{
   font-family: "Staatliches", sans-serif;
-  font-size: 6em;
+  font-size: 5.5em;
   text-transform: uppercase;
   color: white;
   margin-bottom: 0px;
   margin-top: 0px;
   font-weight: 100;
   line-height: 0.85em;
+  margin-bottom: 15px;
+  
   opacity: 0;
   animation-name: bounceIn;
   animation-duration: 450ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
+
 }
+@media only screen and (max-width: 768px){
+  banner h1 {
+    margin-bottom: 30px;
+  }
+}
+
 banner #social_links_container{
   display: flex;
   justify-content: space-between;
