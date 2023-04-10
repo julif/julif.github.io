@@ -4,7 +4,7 @@ banner{
   display: grid;
   justify-content: center;
   align-items: center;
-  background-image:url(../img/banner_background.png);
+  background-image:url(../img/banner_background_3.png);
  /*   background-image:  url("7.gif"); */
  /* background-image: url(banner_background.png), url("1.gif"); */
    background-blend-mode: screen;   
@@ -16,7 +16,7 @@ banner{
 }
 banner h1{
   font-family: "Staatliches", sans-serif;
-  font-size: 5.5em;
+  font-size: 7.5em;
   text-transform: uppercase;
   color: white;
   margin-bottom: 0px;
@@ -31,6 +31,7 @@ banner h1{
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
+  text-align: center;
 
 }
 @media only screen and (max-width: 768px){
