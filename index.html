@@ -211,9 +211,86 @@ width: 100%;
         <a href="https://ko-fi.com/julif" id="kofi_btn"> <img src="img/kofi1.png"></a></div>
       </div>
     </banner>
-    <div  class="ripped_border" style="">
+
+
+    <style>
+#comission_banner{
+  background-color: #e79d2e;
+  background-image: url(IMG/commissions_banner_background.png);
+  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+}
+#comission_banner h2{
+margin: 0px;
+font-size: 4.0em;
+background-color: black;
+    padding: 40px;
+}
+#nix_comssions{
+  height: 100%;
+    right: 0;
+    right: -7px;
+    top: 7px;
+    position: absolute;
+    /* animation: shaki-shake 0.2s infinite; */
+    animation: 0.4s linear 0s infinite normal both running vibrate-2;
+}
+@keyframes vibrate-2 {
+
+0%, 100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+
+20% {
+    -webkit-transform: translate(2px,-2px);
+    transform: translate(2px,-2px);
+}
+40% {
+    -webkit-transform: translate(2px,2px);
+    transform: translate(2px,2px);
+}
+60% {
+    -webkit-transform: translate(-2px,2px);
+    transform: translate(-2px,2px);
+}
+80% {
+    -webkit-transform: translate(-2px,-2px);
+    transform: translate(-2px,-2px);
+}
+} 
+
+
+@media only screen and (max-width:1350px){
+  #comission_banner h2 {
+  margin-bottom:200px;
+    margin-top: 130px;
+    font-size: 2.7em;
+  }
+  #nix_comssions{ height: 58%;
+    right: 0;
+    right: -7%;
+    top: auto;
+    bottom: -7%;}
+}
+
+    </style>
+    <a href="https://julif.github.io/comissions/" style="text-decoration: none;">
+     <section  id="comission_banner" >
+      <!-- comissiones -->
+      <h2 style="color: white;">Commissions  Open </h2>
+      <img id="nix_comssions" src="img/nix_two_soyjaks.png">
+     </section>
+    </a>
+    <!--  <div  class="ripped_border" > -->
       <!--  <svg class="ragg_border" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 1950 20" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);background-color: var(--about_me);"><path d="m0 9 301-1 8 6 384-10 49 7 341-7 161 3 137-7 6 5 11-5 403 7 65-6 84 7.5v11.5h-1950z" fill="#010101"></path></svg> -->
-     
+     <!-- 
       <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="65" viewBox="0 0 1920 65" style="margin-top: -26px;">
  
        <defs>
@@ -222,11 +299,11 @@ width: 100%;
                fill: var(--about_me_background);
                fill-rule: evenodd;
              }
-           </style>
+           </>
          </defs>
          <path class="ripped_border_white" d="M-11-128H288l8,6s373.5-9.5,375-10,46,8,46,8l310-9,71,2,112,3,132-9,7,7,9-7,171,4,171,3,57,2,58-8,57,6,47,2,16,65S-60.5-60-58-60s46-66,46-66M-6,38L133,28l8,8L506,25l8,17,6-16,171-6,43,13,19-9,34,9,24-9,226-3s74,15,91,15,136-16,136-16l11,17,10-14,23-3,8,13,4-12,31-3,157,6,125-4s145,10,150,10S1920,6,1924,6s20,131,20,131L-24,148Z"/>
        </svg>
-     </div>
+     </div> -->
     <section style="   background-color: var(--about_me_background);">
       <div class="contenido">
       <!--   <h2> sobre mi </h2> -->
@@ -234,17 +311,17 @@ width: 100%;
           <div class="columna1d2">  <img src="img/foto.jpg" ></div>
           <div class="columna2d2" style="color:  var(--about_me_p);">
             <h2 style="color:  var(--about_me_h2);"> sobre mi </h2>
-            <p>  Mi nombre es Julian Filardi tengo 31 años y soy un desarrollador web front end / ilustrador Argentino.</p>
+            <p>  Mi nombre es Julian Filardi tengo 33 años y soy un desarrollador web front end / ilustrador Argentino.</p>
             <p> Me especializo en crear temas de wordpress y pequeños juegos simples para navegador en javascript.</p>
           </div>
         </div>
       </div>
     </section>
     
-    <div  class="ripped_border" style="  background-color: var(--about_me_background); ">
+  <!--   <div  class="ripped_border" style="  background-color: var(--about_me_background); "> -->
      <!--   <svg class="ragg_border" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 1950 20" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);background-color: var(--about_me);"><path d="m0 9 301-1 8 6 384-10 49 7 341-7 161 3 137-7 6 5 11-5 403 7 65-6 84 7.5v11.5h-1950z" fill="#010101"></path></svg>  -->
     
-     <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="65" viewBox="0 0 1920 65">
+   <!--   <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="65" viewBox="0 0 1920 65">
 
     <defs>
         <style>
@@ -256,7 +333,7 @@ width: 100%;
       </defs>
       <path class="cls-1" d="M-34.984,35.544L225.76,29.79l6.994,15.824,9.99-15.105,120.882-2.158L379.61,39.141,390.6,30.509l136.866-5.035-7.992,9.351,67.934-2.877s-20.9-8.7-13.987-8.632,225.779,0,225.779,0l11.989,12.228,151.851-7.912s23.107,3.589,30.97,3.6,66.071-10.152,70.931-10.07,269.4,0.719,269.4.719l26.98,6.474,9.99-5.754,188.81-2.877,267.74,10.07,73.93-9.351,134.87-.719,0.99,13.667,24.98-9.351,72.93,0.719s104.85-4.4,111.89-4.316,144.83,7.169,167.83,7.912,124.87,0.7,128.88.719S2696.01,19,2696.01,19L2708,104.117,893.107,188.994S-59.964,167.578-60.959,159.742s-52.956-81.988-43.957-87.753,55.945-38.6,55.945-38.6l8.991,1.439Z"/>
     </svg>
-    </div>
+    </div> -->
     <footer>
       <div class="contenido">
         <div class="center"> <p style="color: #71748bfc;">© Julif 2022. All rights reserved.</p></div>

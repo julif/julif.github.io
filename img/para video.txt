@@ -1,3 +1,0 @@
-<video autoplay="" muted="" loop="loop">
-                <source src="https://static.ankama.com/wakfu/ng/img/../modules/homepage/shukrute/assets/keyart/spark.webm" type="video/webm">
-            </video>
