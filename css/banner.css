@@ -2,7 +2,7 @@ banner{
   background-color: #16182a87;
   min-height: 95vh;
   display: grid;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-image:url(../img/banner_background_3.png);
  /*   background-image:  url("7.gif"); */
