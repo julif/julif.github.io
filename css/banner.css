@@ -14,6 +14,125 @@ banner{
   /* efecto: glitch */
   /* background-image: url(banner_background.png), url("8.gif");background-blend-mode: multiply;  */
 }
+
+banner mobile_nav{
+  display: block;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  /* background-color: red; */
+  padding: 20px;
+  color: white;
+
+}
+
+banner mobile_nav button{
+  background-color: transparent;
+    border: none;
+    height: 150px;
+    width: 150px;
+    color: white;
+    height: auto;
+    width: 35px;
+}
+
+banner mobile_menu button{
+  background-color: transparent;
+    border: none;
+    height: 150px;
+    width: 150px;
+    color: white;
+    height: auto;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#mobile_menu{
+  background-color:  #0a0a0c;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000000000000000000;
+  left: -100%;
+  transition: 0.5s ;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile_menu a{
+  text-decoration: none;
+  color: #ffffffbf;
+  /* opacity: 0; */
+  color: white;
+  padding: 10px;
+  /* border-right: 4px solid #ffffff1a; */
+  transform: scale(1, 1.1);
+  font-family: system-ui;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  font-weight: 600;
+
+}
+banner nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 30px;
+  padding-right: 50px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: flex;
+  font-weight: 600;
+}
+banner nav div{
+  /* margin-right: 15px; */
+}
+banner nav a{
+  text-decoration: none;
+  color: #ffffffbf;
+  /* opacity: 0; */
+  color: white;
+  padding: 10px;
+  /* border-right: 4px solid #ffffff1a; */
+  transform: scale(1, 1.1);
+      font-family: system-ui; 
+      opacity: 0.8; 
+
+
+/* 
+      animation: FadeIn 1s forwards;
+      animation-delay: 2s; */
+}
+
+banner nav a:visited{
+  color: #ffffffbf;
+  color: white;
+}
+banner nav a:hover{
+  /* background-color: white;
+  color: black; */
+  /* opacity: 0.5; */
+  color: #e79d2e;
+  color: white;
+  opacity: 0.5;
+}
+
+.mobile-only{
+  display: none;
+}
+@media only screen and (max-width:750px){
+.desktop-only{display: none;}
+
+.mobile-only{display: inherit;}
+}
+
+
 banner h1{
   font-family: "Staatliches", sans-serif;
   font-size: 7.5em;
@@ -51,6 +170,7 @@ banner #social_links_container{
   margin-bottom: 25px;
   margin-top: 7px;
 }
+/* banner #social_links_container a:hover{margin-top: -10px;} */
 #social_links_container a {
 padding: 6px;
 padding-top: 11px;
