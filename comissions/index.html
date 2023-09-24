@@ -60,28 +60,7 @@
 }
 }
 
-footer {
-    color: #71748bfc;
-    background-color: #010101;
-    padding: 40px;
-    text-align: center;
-    font-weight: 600;
-}
-footer #social_links_container_footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-footer #social_links_container_footer a {
- background-color: transparent;
-}
-footer linea {
-    height: 3px;
-    display: block;
-    background-color: #141414;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+
 
 svg{
   fill: white;
@@ -165,6 +144,167 @@ svg{
         }
       }
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000eb;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+
+  margin: auto;
+  padding: 0;
+  width: 95%;
+ 
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+
+  display: block;
+
+    /* position: absolute; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
           </style>
    
            <section  id="comission_banner" >
@@ -200,29 +340,30 @@ svg{
       
       <h2><b>Prices:</b></h2>
 
-      <p><b> Bust without background : $10 USD </b></p>
+      <p><b> Bust without background : $15 USD </b></p>
       <div class="thumbs">
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4oqd_o1B8HQ-rkizg4VtvfvDLLEtDIRfx0uf9CrvlL2dxyN5Jg_7S6JLVOyIhcnILsSqLlPTEWYoBvOkesVQzapmDh5VUOZthmmELPE_fq7zcr5fqsfQr2m2XkkilrYopUiyYsLosrMtzk7_Su9ddIra5WA2_8Bo0Os80ggGrmv5NhQZdrgHWH0jZoA/s16000/bust_example_1.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4oqd_o1B8HQ-rkizg4VtvfvDLLEtDIRfx0uf9CrvlL2dxyN5Jg_7S6JLVOyIhcnILsSqLlPTEWYoBvOkesVQzapmDh5VUOZthmmELPE_fq7zcr5fqsfQr2m2XkkilrYopUiyYsLosrMtzk7_Su9ddIra5WA2_8Bo0Os80ggGrmv5NhQZdrgHWH0jZoA/s16000/bust_example_1.png" /></a>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8KIDswPUbjWoIGLW0hDyv8rdVwOfpHJJphIYs98WjyYIXqKzB2hnfo0m-Y-1IIwtfadqKXE5FmV9-zbp8CJ3jmqR8jrmXpBnXFcbpMnnvzZH4fCu7ga37xBEffaq9dfE4wwGFU-RuzxsPrRvQ38anqmCyAszElJCzkENS6k4iz9obapYmaVuCsYqtyQ/s1707/bust_example_2.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8KIDswPUbjWoIGLW0hDyv8rdVwOfpHJJphIYs98WjyYIXqKzB2hnfo0m-Y-1IIwtfadqKXE5FmV9-zbp8CJ3jmqR8jrmXpBnXFcbpMnnvzZH4fCu7ga37xBEffaq9dfE4wwGFU-RuzxsPrRvQ38anqmCyAszElJCzkENS6k4iz9obapYmaVuCsYqtyQ/s1707/bust_example_2.jpg"></a>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS7OhWi4J_m7jiGUi4gn025I3Zl9ul7XQvKu9eCUrdb483QgE_7f2-n_j9cCxUAkLXXG3cdxBgN0a17xVBPaUUI_zNKYB3wf_6W62XVLlH2wHvb-BXulnblM7ljas3M1mAWO58yWHC6wVFJQqEDLy92bZd2w9qbzp-oexUAJzeetXfMTSgq29mpluklQ/s1920/bust_example_3.jpg"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS7OhWi4J_m7jiGUi4gn025I3Zl9ul7XQvKu9eCUrdb483QgE_7f2-n_j9cCxUAkLXXG3cdxBgN0a17xVBPaUUI_zNKYB3wf_6W62XVLlH2wHvb-BXulnblM7ljas3M1mAWO58yWHC6wVFJQqEDLy92bZd2w9qbzp-oexUAJzeetXfMTSgq29mpluklQ/s1920/bust_example_3.jpg" /></a>
+        <img onclick="openModal();currentSlide(1)" class="hover-shadow" src="img/bust_example_1.png"></a>
+        <img onclick="openModal();currentSlide(2)" class="hover-shadow" src="img/bust_example_2.jpg"></a>
+        <img onclick="openModal();currentSlide(3)" class="hover-shadow" src="img/bust_example_3.jpg"></a>
+       
       </div>
-      <p><b> Half body without background: $20 USD </b></p>
+      <p><b> Half body without background: $25 USD </b></p>
       <div class="thumbs">
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dew8q4q-5c3a4a21-6d31-4806-8983-2db3a76487b3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGV3OHE0cS01YzNhNGEyMS02ZDMxLTQ4MDYtODk4My0yZGIzYTc2NDg3YjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OcnvupcpEPgoI4vtp8bxKw_hA2WD0iZ52ezYltitCmw"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dew8q4q-5c3a4a21-6d31-4806-8983-2db3a76487b3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGV3OHE0cS01YzNhNGEyMS02ZDMxLTQ4MDYtODk4My0yZGIzYTc2NDg3YjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OcnvupcpEPgoI4vtp8bxKw_hA2WD0iZ52ezYltitCmw" alt=""></a>
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/df2mb2f-6f85e612-2924-4f5b-9b93-38bd44d0c29e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGYybWIyZi02Zjg1ZTYxMi0yOTI0LTRmNWItOWI5My0zOGJkNDRkMGMyOWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VAQGCdp5M4-oMEdKXMUxFPfcE22qf9flIGszjQ-y7uA"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/df2mb2f-6f85e612-2924-4f5b-9b93-38bd44d0c29e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGYybWIyZi02Zjg1ZTYxMi0yOTI0LTRmNWItOWI5My0zOGJkNDRkMGMyOWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VAQGCdp5M4-oMEdKXMUxFPfcE22qf9flIGszjQ-y7uA"></a>  
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfej3lj-0fce5008-46fc-49e5-8eca-64011f39a06d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZlajNsai0wZmNlNTAwOC00NmZjLTQ5ZTUtOGVjYS02NDAxMWYzOWEwNmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s04zZ7WUra2IMR4fAQnzdcoRQjsAy9l0GTmoXLJODhI"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfej3lj-0fce5008-46fc-49e5-8eca-64011f39a06d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZlajNsai0wZmNlNTAwOC00NmZjLTQ5ZTUtOGVjYS02NDAxMWYzOWEwNmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.s04zZ7WUra2IMR4fAQnzdcoRQjsAy9l0GTmoXLJODhI"></a>
+        <img onclick="openModal();currentSlide(4)" class="hover-shadow" src="img/half_body_example_1.png"></a>
+        <img onclick="openModal();currentSlide(5)" class="hover-shadow" src="img/half_body_example_2.png"></a>
+        <img onclick="openModal();currentSlide(6)" class="hover-shadow" src="img/half_body_example_3.png"></a>
       </div>
-      <p><b> full body without background: $30 USD </b></p>
+      <p><b> full body without background: $35 USD </b></p>
       <div class="thumbs">
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfps2x5-2c0a58df-5db8-486a-9968-db628edd4243.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZwczJ4NS0yYzBhNThkZi01ZGI4LTQ4NmEtOTk2OC1kYjYyOGVkZDQyNDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Vh6ZB-9DKq54GfOazOU8a2J5Ofid1FZXsY7ikyuHQxQ"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfps2x5-2c0a58df-5db8-486a-9968-db628edd4243.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZwczJ4NS0yYzBhNThkZi01ZGI4LTQ4NmEtOTk2OC1kYjYyOGVkZDQyNDMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Vh6ZB-9DKq54GfOazOU8a2J5Ofid1FZXsY7ikyuHQxQ"></a>
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfpywv8-e8c40075-1ede-4cc8-be61-75dc65ab13df.png/v1/fill/w_1280,h_1127,q_80,strp/bell_by_julif_art_dfpywv8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyNyIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZweXd2OC1lOGM0MDA3NS0xZWRlLTRjYzgtYmU2MS03NWRjNjVhYjEzZGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pncJxMn1DWQpDZz8e-3ktbRZhEgLbuhiP_JSn-Q8OPg"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfpywv8-e8c40075-1ede-4cc8-be61-75dc65ab13df.png/v1/fill/w_1280,h_1127,q_80,strp/bell_by_julif_art_dfpywv8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyNyIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZweXd2OC1lOGM0MDA3NS0xZWRlLTRjYzgtYmU2MS03NWRjNjVhYjEzZGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pncJxMn1DWQpDZz8e-3ktbRZhEgLbuhiP_JSn-Q8OPg"></a>
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/df597ys-1ac17e64-6150-4de9-aac8-47ec30ff3aa6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGY1OTd5cy0xYWMxN2U2NC02MTUwLTRkZTktYWFjOC00N2VjMzBmZjNhYTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dD66JU9EO8IkjhmX00dbul0VNfc0NjgVIJTqIF2Ql04"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/df597ys-1ac17e64-6150-4de9-aac8-47ec30ff3aa6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGY1OTd5cy0xYWMxN2U2NC02MTUwLTRkZTktYWFjOC00N2VjMzBmZjNhYTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dD66JU9EO8IkjhmX00dbul0VNfc0NjgVIJTqIF2Ql04"></a>
+        <img onclick="openModal();currentSlide(7)" class="hover-shadow" src="img/full_body_example_1.png"></a>
+        <img onclick="openModal();currentSlide(8)" class="hover-shadow" src="img/full_body_example_2.jpg"></a>
+        <img onclick="openModal();currentSlide(9)" class="hover-shadow" src="img/full_body_example_3.png"></a>
       </div>
-      <p><b> Ilustration with background:  $50 USD </b></p>
+      <p><b> Ilustration with background:  $55 USD </b></p>
       <div class="thumbs" >
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfhyoj8-8ea20b6d-6414-4c9d-977e-275342e75198.png/v1/fill/w_1280,h_720,q_80,strp/felurian_by_julif_art_dfhyoj8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYjY2ZjEwYjMtMWEwYS00ODk4LWFjZWEtNjczMGQ5ZGZmODQzXC9kZmh5b2o4LThlYTIwYjZkLTY0MTQtNGM5ZC05NzdlLTI3NTM0MmU3NTE5OC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DG428fvG4QEe21YXpqBnX725rVTU-llg3CxaBx75NnE"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfhyoj8-8ea20b6d-6414-4c9d-977e-275342e75198.png/v1/fill/w_1280,h_720,q_80,strp/felurian_by_julif_art_dfhyoj8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYjY2ZjEwYjMtMWEwYS00ODk4LWFjZWEtNjczMGQ5ZGZmODQzXC9kZmh5b2o4LThlYTIwYjZkLTY0MTQtNGM5ZC05NzdlLTI3NTM0MmU3NTE5OC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DG428fvG4QEe21YXpqBnX725rVTU-llg3CxaBx75NnE"></a>
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfqek47-b4639a80-1a5b-46d9-9ac3-d8b04acd790a.png/v1/fill/w_1280,h_1097,q_80,strp/lugre_by_julif_art_dfqek47-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA5NyIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZxZWs0Ny1iNDYzOWE4MC0xYTViLTQ2ZDktOWFjMy1kOGIwNGFjZDc5MGEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KzyNkNusT1rgI7tw8MXprOYjCUooTsxduO9UYz3ZmKA"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfqek47-b4639a80-1a5b-46d9-9ac3-d8b04acd790a.png/v1/fill/w_1280,h_1097,q_80,strp/lugre_by_julif_art_dfqek47-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA5NyIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZxZWs0Ny1iNDYzOWE4MC0xYTViLTQ2ZDktOWFjMy1kOGIwNGFjZDc5MGEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KzyNkNusT1rgI7tw8MXprOYjCUooTsxduO9UYz3ZmKA"></a>
-        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfqhtzc-fed413a1-5e6c-4954-b210-6e1cb7e229c4.png/v1/fill/w_1280,h_1949,q_80,strp/diosa_2_by_julif_art_dfqhtzc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTk0OSIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZxaHR6Yy1mZWQ0MTNhMS01ZTZjLTQ5NTQtYjIxMC02ZTFjYjdlMjI5YzQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ICTt7gJTkiWT35U5GiWxehpO4dlh4f366Uc6NnZUKOM"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66f10b3-1a0a-4898-acea-6730d9dff843/dfqhtzc-fed413a1-5e6c-4954-b210-6e1cb7e229c4.png/v1/fill/w_1280,h_1949,q_80,strp/diosa_2_by_julif_art_dfqhtzc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTk0OSIsInBhdGgiOiJcL2ZcL2I2NmYxMGIzLTFhMGEtNDg5OC1hY2VhLTY3MzBkOWRmZjg0M1wvZGZxaHR6Yy1mZWQ0MTNhMS01ZTZjLTQ5NTQtYjIxMC02ZTFjYjdlMjI5YzQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ICTt7gJTkiWT35U5GiWxehpO4dlh4f366Uc6NnZUKOM"></a>
+        <img onclick="openModal();currentSlide(10)" class="hover-shadow" src="img/full_ilustration_example_1.jpg"></a>
+        <img onclick="openModal();currentSlide(11)" class="hover-shadow" src="img/full_ilustration_example_2.jpg"></a>
+        <img onclick="openModal();currentSlide(12)" class="hover-shadow" src="img/full_ilustration_example_3.jpg"></a>
       </div>
     
     
@@ -243,8 +384,49 @@ svg{
         Payment method:
         - Please, don't send the payment until I approve your idea.
         <li></li> -->
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides"><img src="img/bust_example_1.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/bust_example_2.jpg" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/bust_example_3.jpg" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/half_body_example_1.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/half_body_example_2.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/half_body_example_3.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_body_example_1.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_body_example_2.jpg" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_body_example_3.png" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_1.jpg" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_2.jpg" style="    height: 98%;width: auto; "></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_3.jpg" style="    height: 98%;width: auto; "></div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+</div>
+
+
+
+
+
+
     </main>
     <footer>
+      <div style="margin-bottom: 40px;" class="multilinks">
+        <a href="https://ko-fi.com/julif?fbclid=IwAR0gsI_8fK69GiAkQN5ZuF9_I0KUtzE8O6pDQu3efmkIXndPeFl4FYv_kK8"> ko-fi </a>
+<a href="https://twitter.com/julian_julif"> Twitter </a>
+<a href="http://juli22f.blogspot.com.ar/"> Blogspot </a>
+     <a href="https://www.deviantart.com/julif-art"> Deviantart </a>
+       <a href="https://www.youtube.com/channel/UCwtSWyoOXwwfbeekdgmJKew"> Youtube </a>
+        <a href="https://julif-art.tumblr.com/"> Tumblr </a>
+        <a href="https://www.instagram.com/_julif_/"> Instagram </a>
+        <a href="https://www.artstation.com/julif"> Artsation </a>
+        <a href="https://www.designbyhumans.com/shop/julif/"> Designbyhumans </a>
+      </div>
       <div id="social_links_container_footer" class="box">
         <a href="https://twitter.com/julian_julif" id="twitter_btn"> <!-- twitter --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg> </a> 
         <a href="https://www.facebook.com/JulifIsBetterThanYourMom/" id="facebook_btn"> <!-- facebook --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg> </a> 
@@ -255,4 +437,50 @@ svg{
     <div> © Julif </div>
     </footer>
   </body>
+
+
+
+    <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
 </html>

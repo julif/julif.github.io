@@ -233,10 +233,28 @@ width: 100%;
     
     margin: 10px;
 }
+
+
+
+
+.vegas-overlay {
+    opacity: .2;
+    background: url(img/05.png) center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
     </style>
   </head>
   <body>
     <banner>
+      <div class="vegas-overlay"></div>
          <!-- --------------- mobile nav --------------- -->
   <mobile_nav class="mobile-only">
     <button onclick="openNav()"  id="open_nav_btn"> <svg    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
@@ -249,12 +267,16 @@ width: 100%;
   </mobile_menu>
    <!-- ---------------  nav --------------- -->
       <nav class="desktop-only"> 
-        <a href="comissions/index.html">Comisiones</a>
-
+      <div class="element"> <a href="comissions/index.html">Comisiones</a></div>
+ 
         <!-- <div>blog</div>
         <div>proyectos</div>
         <div>contacto</div> -->
+
+
       </nav>
+
+
  <div class="contenido">
 
      <!--    <div style="position: absolute;top: 21px;left: 19px;-webkit-clip-path: polygon(0 3%,0 33%,1.5% 45%,2% 99%,53% 97%,100% 100%,99.5% 70%,98% 44%,99% 1%,65% 3%,36% 1%);height: 74px;width: 73px;background-color: #000000;color: #fff5f5;display: flex;font-size: 3em;transform: rotate(0.99turn);offset-rotate: 10px;justify-content: center;align-items: center;font-family: &quot;Staatliches&quot;, sans-serif;"> JF</div> -->
@@ -337,6 +359,19 @@ background-color: #0d0e18;
     bottom: -7%;}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 <img src="img/commission_open_promo.png" style="height: 0px;">
@@ -370,7 +405,7 @@ background-color: #0d0e18;
           <div class="columna1d2">  <img src="img/foto.jpg" ></div>
           <div class="columna2d2" style="color:  var(--about_me_p);">
             <h2 style="color:  var(--about_me_h2);"> sobre mi </h2>
-            <p>  Mi nombre es Julian Filardi tengo 33 años y soy un desarrollador web front end / ilustrador Argentino.</p>
+            <p>  Mi nombre es Julian Filardi soy un desarrollador  ilustrador/desarollador web.</p>
             <p> Me especializo en crear temas de wordpress y pequeños juegos simples para navegador en javascript.</p>
           </div>
         </div>

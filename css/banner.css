@@ -1,13 +1,21 @@
 banner{
-  background-color: #16182a87;
+  /* background-color: #16182a87; */
+  /* background-color: #2a2e51a6; */
+  background-color: black;
+
   min-height: 95vh;
   display: grid;
   /* justify-content: center; */
   align-items: center;
   background-image:url(../img/banner_background_3.png);
+
+    /* fondo enixia animada: ; */
+/* 
+  background-image:url( https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFydTB6aTAzc3BvZGhhcXo3Y2xucWszamIwNWs0dWg3ZDZ5amo2dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tMrQOx67hSwu6idlSj/giphy.gif); */
+ 
  /*   background-image:  url("7.gif"); */
  /* background-image: url(banner_background.png), url("1.gif"); */
-   background-blend-mode: screen;   
+   /* background-blend-mode: screen;    */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -102,25 +110,71 @@ banner nav a{
   /* border-right: 4px solid #ffffff1a; */
   transform: scale(1, 1.1);
       font-family: system-ui; 
-      opacity: 0.8; 
-
+      opacity: 0.6; 
+    
 
 /* 
       animation: FadeIn 1s forwards;
       animation-delay: 2s; */
 }
 
+/* .element:hover> a::after */
+.element:hover>  a::after {
+  content: ' ';
+  /* width: 100%; */
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  left: 0%;
+  display: flex;
+  position: absolute;
+  bottom: -2px;
+  /* left: 0; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  left: 0%;
+ 
+}
+nav a{
+text-align: center;
+position: relative;
+}
+nav  a::after {
+content: ' ';
+  /* width: 100%; */
+  background-color: white;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  display: flex;
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: -2px;
+
+  /* left: 0; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+
+}
+
+
+
 banner nav a:visited{
   color: #ffffffbf;
   color: white;
 }
+
+
+
 banner nav a:hover{
   /* background-color: white;
   color: black; */
   /* opacity: 0.5; */
   color: #e79d2e;
   color: white;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .mobile-only{
