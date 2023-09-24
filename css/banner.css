@@ -224,6 +224,8 @@ banner #social_links_container{
   margin-bottom: 25px;
   margin-top: 7px;
 }
+
+
 /* banner #social_links_container a:hover{margin-top: -10px;} */
 #social_links_container a {
 padding: 6px;
@@ -242,7 +244,9 @@ animation-duration: 450ms;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
 }
-
+#social_links_container a:hover{
+  outline: 2px solid white;
+}
 #twitter_btn {
 background-color: #2daae2;
 fill: white;

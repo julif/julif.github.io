@@ -218,6 +218,7 @@ svg{
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 100;
 }
 
 .close:hover,
@@ -388,19 +389,24 @@ img.hover-shadow {
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-
-    <div class="mySlides"><img src="img/bust_example_1.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/bust_example_2.jpg" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/bust_example_3.jpg" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/half_body_example_1.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/half_body_example_2.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/half_body_example_3.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_body_example_1.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_body_example_2.jpg" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_body_example_3.png" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_ilustration_example_1.jpg" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_ilustration_example_2.jpg" style="    height: 98%;width: auto; "></div>
-    <div class="mySlides"><img src="img/full_ilustration_example_3.jpg" style="    height: 98%;width: auto; "></div>
+<style>
+  .mySlides img{  height: 98%;width: auto;}
+  @media (orientation: portrait) {
+    .mySlides img{  width: 98%; height: auto;}
+}
+</style>
+    <div class="mySlides"><img src="img/bust_example_1.png" ></div>
+    <div class="mySlides"><img src="img/bust_example_2.jpg" ></div>
+    <div class="mySlides"><img src="img/bust_example_3.jpg" ></div>
+    <div class="mySlides"><img src="img/half_body_example_1.png" ></div>
+    <div class="mySlides"><img src="img/half_body_example_2.png" ></div>
+    <div class="mySlides"><img src="img/half_body_example_3.png" ></div>
+    <div class="mySlides"><img src="img/full_body_example_1.png" ></div>
+    <div class="mySlides"><img src="img/full_body_example_2.jpg" ></div>
+    <div class="mySlides"><img src="img/full_body_example_3.png" ></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_1.jpg" ></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_2.jpg" ></div>
+    <div class="mySlides"><img src="img/full_ilustration_example_3.jpg" ></div>
 
     <!-- Next/previous controls -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
