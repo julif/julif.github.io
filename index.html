@@ -252,7 +252,7 @@ width: 100%;
 
     </style>
   </head>
-  <body>
+  <body id="body">
     <banner>
       <div class="vegas-overlay"></div>
          <!-- --------------- mobile nav --------------- -->
@@ -455,12 +455,14 @@ background-color: #0d0e18;
 
     function openNav(){
    
-      document.getElementById("mobile_menu").style.left = 0;   document.getElementById("mobile_menu").style.transition = "0.5s";
+      document.getElementById("mobile_menu").style.left = 0;   document.getElementById("mobile_menu").style.transition = "0.3s";
+      document.getElementById("body").classList.add("modal-open");
 
     }
     function closeNav(){
    
  document.getElementById("mobile_menu").style.left =" -100%";   document.getElementById("mobile_menu").style.transition ="0.3s";
+ document.getElementById("body").classList.remove("modal-open");
 }
   </script>
 </html>
