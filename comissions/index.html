@@ -40,6 +40,9 @@
     }
 
     .thumbs{display: flex;    justify-content: center;     gap: 5px;}
+    .thumbs img{
+      cursor: pointer;
+    }
 
 
 
@@ -67,8 +70,10 @@ svg{
 }
     </style>
   </head>
-  <body>
+  <body id="body">
     <style>
+
+
       #comission_banner{
         background-color: #e79d2e;
         background-image: url(../img/commissions_banner_background_2.png);
@@ -160,7 +165,13 @@ svg{
 
 
 
-
+.modal-open{
+    /* block scroll for mobile; */
+    /* causes underlying page to jump to top; */
+    /* prevents scrolling on all screens */
+    overflow: hidden;
+    /* position: fixed; */
+}
 
 
 
@@ -450,11 +461,13 @@ img.hover-shadow {
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  document.getElementById("body").classList.add("modal-open");
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.getElementById("body").classList.remove("modal-open");
 }
 
 var slideIndex = 1;
