@@ -1,68 +1,51 @@
-<html  lang=es>
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> Julian Filardi </title>
+    <title> Julif </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
-
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <!-- banner -->
-     <link rel="stylesheet" href="css/banner.css">
-     <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/animaciones.css">
     <style>
       :root{
-       
-     /*    --about_me_background: #151c28;
-        --about_me_h2: white!important;
-        --about_me_p: #ffffff6b!important; */
-
-
         --about_me_background: #f3f3f3;
-    --about_me_h2: black!important;
-    --about_me_p: #02021085!important;
+        --about_me_h2: black!important;
+        --about_me_p: #02021085!important;
       }
-      a{
-        cursor: pointer;
-      }
+      /* Idiomas */
+      body.lang-en .lang-es { display: none; }
+      body.lang-es .lang-en { display: none; }
+       a{ cursor: pointer; }
       h2{
         text-align: center;
         margin-top: 0px;font-size: 2.5em;
         text-transform: uppercase;
       }
-      p{
-      
-        font-size: 1.3em;
-    /* font-weight: 600; */
-    /* color: #41455c; */
-      }
-   /*    footer{
-        padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: #010101;
-    color: white;
-      } */
+      p{ font-size: 1.3em; }
       footer {
-    color: #71748bfc;
-    background-color: #010101;
-    padding: 40px;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 80px;
-}
-footer #social_links_container_footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-footer #social_links_container_footer a {
- background-color: transparent;
-}
-footer linea {
-    height: 3px;
-    display: block;
-    background-color: #141414;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+        color: #71748bfc;
+        background-color: #010101;
+        padding: 40px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 80px;
+      }
+      footer #social_links_container_footer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      footer #social_links_container_footer a { background-color: transparent; }
+      footer linea {
+        height: 3px;
+        display: block;
+        background-color: #141414;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
       .ripped_border{
         /* display: none; */
         width: 100%;
@@ -70,386 +53,277 @@ footer linea {
         margin-top: -16px;
       }
       section{
-/*         padding-top: 50px;
-    padding-bottom: 80px; */
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      .blocks_container {
+        max-width: 1200px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* margin-top: 60px; */
+      }
+      .blocks_container article{ width: 33%;}
+      .block_separator{padding: 8px; }
+      .block_separator a{
+        position: relative;
+        display: block;
+        /* box-shadow: 0 0 0px 2px #000000; */
+        overflow: hidden;
+        clip-path: polygon(0 3%,0 33%,1.5% 45%,2% 99%,53% 97%,100% 100%,99.5% 70%,98% 44%,99% 1%,65% 3%,36% 1%);
+      }
+      .block{ 
+        position: relative;
+        font-family: "proxima-nova",sans-serif;
+        width: 100%;
+        /* padding-top: 47.25%; */
+        padding-top: 62.25%;
+        /* box-shadow: 0 0 0px 2px #000000; */
 
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        transition: all .5s;
+      }
+      .block_tittle {
+        background-color: #000000a6;
+        color: white;
+        /* padding: 18px; */
+        /* position: relative; */
+        position: absolute;
+        /* position: inherit; */
+        bottom: 0;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 27px;
+        transition: all .5s;
 
-    padding-top: 0px;
-    padding-bottom: 30px;
- 
+        position: absolute;
+        bottom: 0px;
+        z-index: 2;
+      }
+      .block_tittle p {
+        width: fit-content;
+        margin: 0px;
+        padding: 18px;
+        color: white;
+        
+      }
+      .block_tittle {
+          opacity: 0;
+      }
+      .block_separator a:hover >  .block_tittle {  opacity: 1; } 
+      .block_separator a:hover >  .block{transform: scale(1.2); z-index: 1;}
+      @media only screen and (max-width: 950px){
+        .blocks_container article{ width: 50%;}
+        .block_tittle { opacity: 1;}
+      }
+      @media only screen and (max-width: 750px){
+        .blocks_container article{ width: 100%;}
+        .block_separator{    
+          padding: 28px; 
+          padding-top: 0px;
+          padding-bottom: 20px;
+        }
+      }
+      .dos_columnas{  
+        display: flex;
+        align-items: center;
+        padding: 5%;
 
       }
-
-
-
-
-
-
-
-
-      .blocks_container {
-    max-width: 1200px;
-    margin: 0px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-top: 60px; */
-}
-.blocks_container article{ width: 33%;}
-.block_separator{padding: 8px; }
-.block_separator a{
-  position: relative;
-  display: block;
-  /* box-shadow: 0 0 0px 2px #000000; */
-  overflow: hidden;
-  clip-path: polygon(0 3%,0 33%,1.5% 45%,2% 99%,53% 97%,100% 100%,99.5% 70%,98% 44%,99% 1%,65% 3%,36% 1%);
-}
-.block{ 
-    position: relative;
-    font-family: "proxima-nova",sans-serif;
-    width: 100%;
-    /* padding-top: 47.25%; */
-    padding-top: 62.25%;
-    /* box-shadow: 0 0 0px 2px #000000; */
-
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    transition: all .5s;
-}
-.block_tittle {
-    background-color: #000000a6;
-    color: white;
-    /* padding: 18px; */
-    /* position: relative; */
-    position: absolute;
-    /* position: inherit; */
-    bottom: 0;
-    width: 100%;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 27px;
-    transition: all .5s;
-
-    position: absolute;
-    bottom: 0px;
-    z-index: 2;
-}
-.block_tittle p {
-    width: fit-content;
-    margin: 0px;
-    padding: 18px;
-    color: white;
-   
-}
-
-
-
-
-.block_tittle {
-    opacity: 0;
-}
-    
- /*.block_separator a:hover + .block_tittle {
-    display: block;
-} */
-/* .block_separator a:hover > .block .block_tittle {  display: block; } */
-
-
-  .block_separator a:hover >  .block_tittle {  opacity: 1; } 
-
-
-  .block_separator a:hover >  .block{transform: scale(1.2); z-index: 1;}
-
-
-@media only screen and (max-width: 950px){
-
-.blocks_container article{
-  width: 50%;
-}
-
-.block_tittle {
-  opacity: 1;
-}
-
-
-
-}
-@media only screen and (max-width: 750px){
-
-.blocks_container article{
-width: 100%;
-}
-.block_separator{    padding: 28px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.dos_columnas{   display: flex;
-    align-items: center;
-  
-    padding: 5%;
-  }
-  .columna1d2 { width: 30%; }
-    .columna1d2 img{ width: 100%; height:auto; }
-
-    .columna2d2{     margin-left: 100px;  width: 65%;}
-    .columna2d2 h2{margin-left: -10%;}
-
-
-
-    @media only screen and (max-width: 750px){
-      .columna1d2 { width: 100%;  }
-      .columna1d2 img{ width: 60%; height: auto; }
-      .dos_columnas{   display: block;
-    align-items: center;
-    padding: 1%;
-  }
-  .columna2d2{     margin-left: 0px;  margin-top: 40px;text-align: center; width: 100%;  }
-  .columna2d2 h2{margin-left: 0%;}
-}
-
-
-.multilinks a{
-
-  cursor: pointer;
-    text-decoration: none;
-    color: #ffffff8c;
-    
-    margin: 10px;
-}
-
-
-
-
-.vegas-overlay {
-    opacity: .2;
-    background: url(img/05.png) center center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-
-
-
-
-
-    </style>
-  </head>
-  <body id="body">
-    <banner>
-      <div class="vegas-overlay"></div>
-         <!-- --------------- mobile nav --------------- -->
-  <mobile_nav class="mobile-only">
-    <button onclick="openNav()"  id="open_nav_btn"> <svg    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
-   
-  </mobile_nav>
-  <mobile_menu id="mobile_menu" class="mobile-only">
-
-    <button onclick="closeNav()" id="close_nav_btn">  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-    <a href="comissions/index.html">Comisiones</a>
-  </mobile_menu>
-   <!-- ---------------  nav --------------- -->
-      <nav class="desktop-only"> 
-      <div class="element"> <a href="comissions/index.html">Comisiones</a></div>
- 
-        <!-- <div>blog</div>
-        <div>proyectos</div>
-        <div>contacto</div> -->
-
-
-      </nav>
-
-
- <div class="contenido">
-
-     <!--    <div style="position: absolute;top: 21px;left: 19px;-webkit-clip-path: polygon(0 3%,0 33%,1.5% 45%,2% 99%,53% 97%,100% 100%,99.5% 70%,98% 44%,99% 1%,65% 3%,36% 1%);height: 74px;width: 73px;background-color: #000000;color: #fff5f5;display: flex;font-size: 3em;transform: rotate(0.99turn);offset-rotate: 10px;justify-content: center;align-items: center;font-family: &quot;Staatliches&quot;, sans-serif;"> JF</div> -->
-        <h1> Julif </h1>
-        <div id="social_links_container" class="box">
-          <a href="https://twitter.com/julian_julif" id="twitter_btn"> <!-- twitter --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg> </a> 
-          <a href="https://www.facebook.com/JulifIsBetterThanYourMom/" id="facebook_btn"> <!-- facebook --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg> </a> 
-          <a href="https://github.com/julif" id="github_btn"> <!-- github --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg> </a> 
-          <a href="https://www.instagram.com/_julif_/" id="instagram_btn"> <!-- instagram --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg> </a>
+      .columna1d2 { width: 30%; }
+      .columna1d2 img{ width: 100%; height:auto; }
+      .columna1d2 img{border-radius: 15px;}
+      .columna2d2{     margin-left: 100px;  width: 65%;}
+      .columna2d2 h2{margin-left: -10%;}
+      @media only screen and (max-width: 750px){
+        .columna1d2 { width: 100%;  }
+        .columna1d2 img{ width: 60%; height: auto; }
+        .dos_columnas{   
+          display: block;
+          align-items: center;
+          padding: 1%;
+        }
+       .columna2d2{     margin-left: 0px;  margin-top: 40px;text-align: center; width: 100%;  }
+       .columna2d2 h2{margin-left: 0%;}
+      }
+      .multilinks a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff8c;
+        margin: 10px;
+      }
+      .vegas-overlay {
+        opacity: .3;
+        background: url(img/05.png) center center;
+        width: 100%;
+        height: 100%; height: stretch;
+        position: absolute;
+      }
+       </style>
+    </head>
+    <body id="body">
+      <banner>
+        <div class="vegas-overlay"></div>
+        <!-- --------------- mobile nav --------------- -->
+        <mobile_nav class="mobile-only">
+          <!-- <button onclick="openNav()"  id="open_nav_btn"> <svg    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button> -->
+        </mobile_nav>
+        <mobile_menu id="mobile_menu" class="mobile-only">
+          <button onclick="closeNav()" id="close_nav_btn">  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+          <a href="comissions/index.html">Comisiones</a>
+        </mobile_menu>
+        <!-- ---------------  nav --------------- -->
+        <nav class="desktop-only"> 
+          <!-- <div class="element"> <a href="https://juli22f.blogspot.com/">Blog</a></div> -->
+          <!-- <div class="element"> <a href="comissions/index.html">Comisiones</a></div> -->
+        </nav>
+        <div class="contenido">
+          <!--    <div style="position: absolute;top: 21px;left: 19px;-webkit-clip-path: polygon(0 3%,0 33%,1.5% 45%,2% 99%,53% 97%,100% 100%,99.5% 70%,98% 44%,99% 1%,65% 3%,36% 1%);height: 74px;width: 73px;background-color: #000000;color: #fff5f5;display: flex;font-size: 3em;transform: rotate(0.99turn);offset-rotate: 10px;justify-content: center;align-items: center;font-family: &quot;Staatliches&quot;, sans-serif;"> JF</div> -->
+          <h1> Julif </h1>
+          <div id="social_links_container" class="box">
+            <a href="https://twitter.com/julian_julif" id="twitter_btn"> <!-- twitter --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg> </a> 
+            <a href="https://www.facebook.com/JulifIsBetterThanYourMom/" id="facebook_btn"> <!-- facebook --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg> </a> 
+            <a href="https://github.com/julif" id="github_btn"> <!-- github --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg> </a> 
+            <a href="https://www.instagram.com/_julif_/" id="instagram_btn"> <!-- instagram --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg> </a>
+          </div>
+          <a href="https://ko-fi.com/julif" id="kofi_btn">
+            <div id="btn_kofi"> 
+              <!-- <span class="kofitext"><img src="cup-border.webp" alt="Ko-fi donations" class="kofiimg">Buy Me a Coffee </span> -->
+              <span class="kofitext lang-en"><img src="cup-border.webp" alt="Ko-fi donations" class="kofiimg"> Suport me</span>
+              <span class="kofitext lang-es"><img src="cup-border.webp" alt="Ko-fi donations" class="kofiimg"> Apóyame </span>
+            </div>
+          </a>
         </div>
-        <a href="https://ko-fi.com/julif" id="kofi_btn">
-
-
-          <div id="btn_kofi"> 
-    
-            <!-- <span class="kofitext"><img src="cup-border.webp" alt="Ko-fi donations" class="kofiimg">Buy Me a Coffee </span> -->
-            <span class="kofitext"><img src="cup-border.webp" alt="Ko-fi donations" class="kofiimg">Support Me </span>
-            
-    </div>
-        </a>
-      </div>
-    </banner>
-
-
+      </banner>
     <style>
-#comission_banner{
-  background-color: #e79d2e;
-  background-image: url(img/commissions_banner_background_2.png);
-  overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    min-height: 350px;
-    position: relative;
-}
-#comission_banner h2{
-margin: 0px;
-font-size: 4.0em;
-background-color: #0d0e18;
-    padding: 40px;
-}
-#nix_comssions{
-  height: 100%;
-    right: 0;
-    right: -7px;
-    top: 7px;
-    position: absolute;
-    /* animation: shaki-shake 0.2s infinite; */
-    animation: 0.4s linear 0s infinite normal both running vibrate-2;
-}
-@keyframes vibrate-2 {
+    #comission_banner {
+      width: 100%;
+    }
+    /* SECCIÓN HERO */
+    .hero {
+      background-color: #e79d2e;
+      background-image: url("https://julif.github.io/img/commissions_banner_background_2.png");
+      background-position: center;
+      background-size: cover;
+    }
 
-0%, 100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-}
+    .hero-content {
+      max-width: 1000px;
+      display: flex;
+      align-items: center;
+      padding: 0px;
+          margin: auto;
+    }
 
-20% {
-    -webkit-transform: translate(2px,-2px);
-    transform: translate(2px,-2px);
-}
-40% {
-    -webkit-transform: translate(2px,2px);
-    transform: translate(2px,2px);
-}
-60% {
-    -webkit-transform: translate(-2px,2px);
-    transform: translate(-2px,2px);
-}
-80% {
-    -webkit-transform: translate(-2px,-2px);
-    transform: translate(-2px,-2px);
-}
-} 
+    /* TEXTO */
+    .hero-text {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
 
+    .text-box {
+      background-color: #17161a;
+      color: white;
+      padding: 25px;
+    }
 
-@media only screen and (max-width:1350px){
-  #comission_banner h2 {
-  margin-bottom:200px;
-    margin-top: 130px;
-    font-size: 2.7em;
-  }
-  #nix_comssions{ height: 58%;
-    right: 0;
-    right: -7%;
-    top: auto;
-    bottom: -7%;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .text-box h3 {
+      font-size: 60px;
+      margin: 15px 0 5px;
+    }
+    .text-box p {
+      color: #656464;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    /* IMAGEN */
+    .hero-image {
+      width: 40%;
+      margin-bottom: -5px; 
+    }
+    .hero-image img {
+      width: stretch;
+      transform: scale(1.2);
+      transform-origin: bottom;
+      position: relative;
+      z-index: 4;
+    }
+    /* RESPONSIVE */
+    @media (max-width: 750px) {
+      .hero-content {
+        display: block;
+      }
+      .hero-text,
+      .hero-image {
+        width: 100%;
+      }
+      .text-box h3 {
+        font-size: 48px;
+      }
+      .hero-image img {
+        transform: none;
+      }
+    }
     </style>
-
-<img src="img/commission_open_promo.png" style="height: 0px;">
-    <a href="https://julif.github.io/comissions/" style="text-decoration: none;">
-     <section  id="comission_banner" >
-      <!-- comissiones -->
-      <h2 style="color: white;">Commissions  Open </h2>
-      <img id="nix_comssions" src="img/nix_two_soyjaks.png">
-     </section>
-    </a>
-    <!--  <div  class="ripped_border" > -->
-      <!--  <svg class="ragg_border" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 1950 20" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);background-color: var(--about_me);"><path d="m0 9 301-1 8 6 384-10 49 7 341-7 161 3 137-7 6 5 11-5 403 7 65-6 84 7.5v11.5h-1950z" fill="#010101"></path></svg> -->
-     <!-- 
-      <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="65" viewBox="0 0 1920 65" style="margin-top: -26px;">
- 
-       <defs>
-           <style>
-             .ripped_border_white {
-               fill: var(--about_me_background);
-               fill-rule: evenodd;
-             }
-           </>
-         </defs>
-         <path class="ripped_border_white" d="M-11-128H288l8,6s373.5-9.5,375-10,46,8,46,8l310-9,71,2,112,3,132-9,7,7,9-7,171,4,171,3,57,2,58-8,57,6,47,2,16,65S-60.5-60-58-60s46-66,46-66M-6,38L133,28l8,8L506,25l8,17,6-16,171-6,43,13,19-9,34,9,24-9,226-3s74,15,91,15,136-16,136-16l11,17,10-14,23-3,8,13,4-12,31-3,157,6,125-4s145,10,150,10S1920,6,1924,6s20,131,20,131L-24,148Z"/>
-       </svg>
-     </div> -->
-    <section style="   background-color: var(--about_me_background);">
-      <div class="contenido">
-      <!--   <h2> sobre mi </h2> -->
-        <div class="dos_columnas"> 
-          <div class="columna1d2">  <img src="img/foto.jpg" ></div>
-          <div class="columna2d2" style="color:  var(--about_me_p);">
-            <h2 style="color:  var(--about_me_h2);"> sobre mi </h2>
-            <p>  Mi nombre es Julian Filardi soy un desarrollador  ilustrador/desarollador web.</p>
-            <p> Me especializo en crear temas de wordpress y pequeños juegos simples para navegador en javascript.</p>
+      <div id="comission_banner">
+        <div class="hero">
+          <section class="hero-content">
+            <div class="hero-text">
+              <div class="text-box">
+                <h3 class="lang-es">COMISIONES CERRADAS</h3>
+                <p class="lang-es">Por favor intente más tarde</p>
+                <!-- Ingles -->
+                <h3 class="lang-en">COMMISSIONS CLOSED</h3>
+                <p class="lang-en">Please try again later</p>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="img.png" alt="Ilustración">
+            </div>
+          </section>
+        </div>
+      </div>
+      <section style="   background-color: var(--about_me_background);">
+        <div class="contenido">
+          <div class="dos_columnas"> 
+            <div class="columna1d2">  <img src="julif_2.png" ></div>
+            <div class="columna2d2" style="color:  var(--about_me_p);">
+              <h2  class="lang-es" style="color:  var(--about_me_h2);"> sobre mi </h2>
+              <h2  class="lang-en" style="color:  var(--about_me_h2);"> About me </h2>
+              <p class="lang-es"> Soy un Ilustrador freelancer argentino que ama dibujar dragones</p>
+              <p class="lang-en"> I am an Argentinian freelance illustrator who loves to draw dragons </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-  <!--   <div  class="ripped_border" style="  background-color: var(--about_me_background); "> -->
-     <!--   <svg class="ragg_border" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 1950 20" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);background-color: var(--about_me);"><path d="m0 9 301-1 8 6 384-10 49 7 341-7 161 3 137-7 6 5 11-5 403 7 65-6 84 7.5v11.5h-1950z" fill="#010101"></path></svg>  -->
-    
-   <!--   <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="65" viewBox="0 0 1920 65">
-
-    <defs>
-        <style>
-          .cls-1 {
-            fill: #010101;
-            fill-rule: evenodd;
-          }
-        </style>
-      </defs>
-      <path class="cls-1" d="M-34.984,35.544L225.76,29.79l6.994,15.824,9.99-15.105,120.882-2.158L379.61,39.141,390.6,30.509l136.866-5.035-7.992,9.351,67.934-2.877s-20.9-8.7-13.987-8.632,225.779,0,225.779,0l11.989,12.228,151.851-7.912s23.107,3.589,30.97,3.6,66.071-10.152,70.931-10.07,269.4,0.719,269.4.719l26.98,6.474,9.99-5.754,188.81-2.877,267.74,10.07,73.93-9.351,134.87-.719,0.99,13.667,24.98-9.351,72.93,0.719s104.85-4.4,111.89-4.316,144.83,7.169,167.83,7.912,124.87,0.7,128.88.719S2696.01,19,2696.01,19L2708,104.117,893.107,188.994S-59.964,167.578-60.959,159.742s-52.956-81.988-43.957-87.753,55.945-38.6,55.945-38.6l8.991,1.439Z"/>
-    </svg>
-    </div> -->
- 
+      </section>
+<!--  <div style="position: absolute; top: 20px; right: 20px; z-index: 100;">
+        <select id="language-selector">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+         </select>
+      </div> -->
     <footer>
       <div style="margin-bottom: 40px;" class="multilinks">
         <a href="https://ko-fi.com/julif?fbclid=IwAR0gsI_8fK69GiAkQN5ZuF9_I0KUtzE8O6pDQu3efmkIXndPeFl4FYv_kK8"> ko-fi </a>
-<a href="https://twitter.com/julian_julif"> Twitter </a>
-<a href="http://juli22f.blogspot.com.ar/"> Blogspot </a>
-     <a href="https://www.deviantart.com/julif-art"> Deviantart </a>
-       <a href="https://www.youtube.com/channel/UCwtSWyoOXwwfbeekdgmJKew"> Youtube </a>
+        <a href="https://twitter.com/julian_julif"> Twitter </a>
+        <a href="http://juli22f.blogspot.com.ar/"> Blogspot </a>
+        <a href="https://www.deviantart.com/julif-art"> Deviantart </a>
+        <a href="https://www.youtube.com/channel/UCwtSWyoOXwwfbeekdgmJKew"> Youtube </a>
         <a href="https://julif-art.tumblr.com/"> Tumblr </a>
         <a href="https://www.instagram.com/_julif_/"> Instagram </a>
         <a href="https://www.artstation.com/julif"> Artsation </a>
-        <a href="https://www.designbyhumans.com/shop/julif/"> Designbyhumans </a>
+        <a href="https://web-cdn.bsky.app/profile/julian-julif.bsky.social"> Bluesky </a>
+        <!-- <a href="https://www.designbyhumans.com/shop/julif/"> Designbyhumans </a> -->
       </div>
       <div id="social_links_container_footer" class="box">
         <a href="https://twitter.com/julian_julif" id="twitter_btn"> <!-- twitter --> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24 " viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg> </a> 
@@ -474,5 +348,60 @@ background-color: #0d0e18;
  document.getElementById("mobile_menu").style.left =" -100%";   document.getElementById("mobile_menu").style.transition ="0.3s";
  document.getElementById("body").classList.remove("modal-open");
 }
+
+
+
+const selector = document.getElementById('language-selector');
+const body = document.body;
+
+// --- LÓGICA DE IDIOMA ---
+// Establecer español como idioma por defecto
+setLanguage('es');
+
+function detectBrowserLanguage() {
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('es') ? 'es' : 'en';
+    setLanguage(lang);
+}
+
+// Llamar al inicio
+detectBrowserLanguage();
+
+
+function setLanguage(lang) {
+    // Eliminamos las clases de idioma previas 
+    body.classList.remove('lang-es', 'lang-en');
+    body.classList.add(`lang-${lang}`);
+    
+    selector.value = lang;
+    localStorage.setItem('userLanguage', lang);
+    document.documentElement.lang = lang;
+}
+
+
+// --- LÓGICA DE IDIOMA ---
+function setLanguage(lang) {
+    // Eliminamos las clases de idioma previas 
+    body.classList.remove('lang-es', 'lang-en');
+    body.classList.add(`lang-${lang}`);
+    
+    selector.value = lang;
+    localStorage.setItem('userLanguage', lang);
+    document.documentElement.lang = lang;
+}
+
+// --- INICIALIZACIÓN AL CARGAR ---
+window.addEventListener('DOMContentLoaded', () => {
+    // Inicializar Tema
+    initTheme();
+    // Inicializar Idioma
+    const savedLang = localStorage.getItem('userLanguage');
+    const browserLang = (navigator.language || navigator.userLanguage).startsWith('en') ? 'en' : 'es';
+    setLanguage(savedLang || browserLang);
+});
+
+selector.addEventListener('change', (e) => setLanguage(e.target.value));
+
+
   </script>
 </html>

@@ -3,11 +3,11 @@ banner{
   /* background-color: #2a2e51a6; */
   background-color: black;
 
-  min-height: 95vh;
+  min-height: 85vh;
   display: grid;
   /* justify-content: center; */
   align-items: center;
-  background-image:url(../img/banner_background_3.png);
+  background-image:url(../img/banner_background.png);
 
     /* fondo enixia animada: ; */
 /* 
@@ -243,6 +243,9 @@ animation-name: bounceIn;
 animation-duration: 450ms;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
+
+
+ animation-delay: calc(1s + (sibling-index() * 0.1s));
 }
 #social_links_container a:hover{
   outline: 2px solid white;
@@ -250,22 +253,22 @@ animation-fill-mode: forwards;
 #twitter_btn {
 background-color: #2daae2;
 fill: white;
-animation-delay: 1s;
+/* animation-delay: 1s; */
 }
 #facebook_btn {
 background-color: #4064ac;
 fill: white;
-animation-delay: 1.10s;
+/* animation-delay: 1.10s; */
 }
 #github_btn {
 background-color: #1b1c2b;
 fill: white;
-animation-delay: 1.20s;
+/* animation-delay: 1.20s; */
 }
 #instagram_btn {
 background-color: #b12388;
 fill: white;
-animation-delay: 1.30s;
+/* animation-delay: 1.30s; */
 }
 #kofi_btn{
 display: block;
